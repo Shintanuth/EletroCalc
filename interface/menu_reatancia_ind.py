@@ -22,9 +22,8 @@ def menu_reatancia_indutiva():
                     case "c":
                             continue
                     case "v":
-                            break
+                            return
                     case "s":
-                            print("Até mais")
-                            quit()
+                            return "sair"
                     case _:
                             print("Opção inválida.")       

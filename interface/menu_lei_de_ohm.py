@@ -34,10 +34,9 @@ def menu_lei_de_ohm():
                     case "c":
                             continue
                     case "v":
-                            break
-                    case "s":
-                            print("Até mais")
                             return
+                    case "s":
+                            return "sair"
                     case _:
                             print("Opção inválida.")       
                     

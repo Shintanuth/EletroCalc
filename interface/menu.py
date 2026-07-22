@@ -6,9 +6,9 @@ from interface.menu_reatancia_cap import menu_reatancia_capacitiva
 def menu():
     
     while True:
-        print("================")
-        print("ELETROCALC v0.1")
-        print("================")
+        print("===========================")
+        print("      ELETROCALC v0.1")
+        print("===========================")
         print("1 - Lei de Ohm")
         print("2 - Potência Elétrica")
         print("3 - Reatância Indutiva" )
@@ -16,8 +16,9 @@ def menu():
         print("5 - Impedância")
         print("6 - Associação em Série")
         print("7 - Associação em Paralelo")
-        print("[0] Sair")
-    
+        print("                  [0] Sair")
+        print("===========================")
+
         opcao = input("Escolha uma opção:")
 
         match opcao:
@@ -25,13 +26,17 @@ def menu():
                 ...
                 break
             case "1":
-                menu_lei_de_ohm()
+                if menu_lei_de_ohm() == "sair":
+                    break
             case "2":
-                menu_potencia()
+                if menu_potencia() == "sair":
+                    break
             case "3":
-                menu_reatancia_indutiva()
+                if menu_reatancia_indutiva() == "sair":
+                    break
             case "4":
-                menu_reatancia_capacitiva()
+                if menu_reatancia_capacitiva() == "sair":
+                    break
             case "5":
                 ...
             case "6":
@@ -40,5 +45,8 @@ def menu():
                 ...
             case _:
                 print("Digite uma entrada válida")
+
+    print("Até mais")
+            
 
 

@@ -17,9 +17,8 @@ def menu_reatancia_capacitiva():
                     case "c":
                             continue
                     case "v":
-                            break
+                            return
                     case "s":
-                            print("Até mais")
-                            quit()
+                            return "sair"
                     case _:
                             print("Opção inválida.")       
