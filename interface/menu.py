@@ -1,6 +1,7 @@
 from interface.menu_lei_de_ohm import menu_lei_de_ohm
 from interface.menu_potencia import menu_potencia
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
+from interface.menu_reatancia_cap import menu_reatancia_capacitiva
 
 def menu():
     
@@ -30,7 +31,7 @@ def menu():
             case "3":
                 menu_reatancia_indutiva()
             case "4":
-                ...
+                menu_reatancia_capacitiva()
             case "5":
                 ...
             case "6":
