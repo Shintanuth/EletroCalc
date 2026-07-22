@@ -1,4 +1,6 @@
 from interface.menu_lei_de_ohm import menu_lei_de_ohm
+from interface.menu_potencia import menu_potencia
+
 
 def menu():
     
@@ -24,7 +26,7 @@ def menu():
             case "1":
                 menu_lei_de_ohm()
             case "2":
-                ...
+                menu_potencia()
             case "3":
                 ...
             case "4":
