@@ -4,7 +4,7 @@ def converte_entrada(entrada):
         try:
             entrada_convertida = float(entrada)
             return entrada_convertida
-        except TypeError:
-            raise TypeError("Digite um valor válido")
+        except ValueError:
+            raise ValueError("Digite um valor válido")
     else:
         return None
