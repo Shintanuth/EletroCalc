@@ -1,3 +1,3 @@
-def mostrar_resultado(grandeza, resultado, unidade):
+def mostrar_resultados(grandeza, resultado, unidade):
     return f'{grandeza} = {resultado} {unidade}'
     
