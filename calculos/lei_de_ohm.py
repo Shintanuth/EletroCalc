@@ -14,7 +14,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
     if corrente is None:
         
         if resistencia == 0:
-            raise ValueError("A resitência não pode ser zero")
+            raise ValueError("A resistência não pode ser zero")
 
         resultado = tensao / resistencia
         return "Corrente", resultado, "A"

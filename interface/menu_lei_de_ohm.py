@@ -1,7 +1,7 @@
 from util.converte_entrada import converte_entrada
 from calculos.lei_de_ohm import calcular_lei_de_ohm
 from util.sair_do_menu import sair_do_menu
-from util.mostrar_resultados import mostrar_resultados
+from util.mostrar_resultado import mostrar_resultado
 
 def menu_lei_de_ohm():
     while True:
@@ -19,10 +19,10 @@ def menu_lei_de_ohm():
                 tensao = converte_entrada(input("Tensão: "))
                 corrente = converte_entrada(input("Corrente: "))
                 resistencia = converte_entrada(input("Resistência: "))
-                print("====================================")
+                print("========================================")
 
                 grandeza, resultado, unidade = (calcular_lei_de_ohm(tensao, corrente, resistencia))
-                print(mostrar_resultados(grandeza, resultado, unidade))
+                print(mostrar_resultado(grandeza, resultado, unidade))
 
             except ValueError as erro:
                 print(erro)
