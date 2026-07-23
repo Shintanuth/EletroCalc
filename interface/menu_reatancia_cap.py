@@ -1,14 +1,16 @@
 from util.sair_do_menu import sair_do_menu
+from util.constantes import SEPARADOR
 
 def menu_reatancia_capacitiva():
     
     while True:
-            print("================================")
+            print(SEPARADOR)
             print("     Reatância Capacitiva")
             print("     Xc = 1 / 2 π x ƒ x C")
-            print("================================")
+            print(SEPARADOR)
 
 
+            print(SEPARADOR)
 
             opcao = sair_do_menu()
             
