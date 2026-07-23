@@ -37,11 +37,11 @@ def menu():
                 if menu_reatancia_capacitiva() == "sair":
                     break
             case "5":
-                ...
+                print("Funcão em desenvolvimento...")
             case "6":
-                ...
+               print("Funcão em desenvolvimento...")
             case "7":
-                ...
+                print("Funcão em desenvolvimento...")
             case _:
                 print("Digite uma entrada válida")
 
