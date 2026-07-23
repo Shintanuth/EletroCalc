@@ -8,7 +8,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
     if tensao is None:    
        
         resultado = corrente * resistencia
-        return "Tensão", resultado, "v"
+        return "Tensão", resultado, "V"
         
     
     if corrente is None:
@@ -28,7 +28,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
         
         resultado = tensao / corrente
 
-        return "Resistência", resultado, "Ω"
+        return "Resistência", resultado, "Ω"
         
     
     
