@@ -23,6 +23,7 @@ def menu_lei_de_ohm():
                 print(calcular_lei_de_ohm(tensao, corrente, resistencia))
             except ValueError as erro:
                 print(erro)
+                continue
                 
             
             opcao = sair_do_menu()

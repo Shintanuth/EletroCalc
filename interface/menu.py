@@ -23,7 +23,6 @@ def menu():
 
         match opcao:
             case "0":
-                ...
                 break
             case "1":
                 if menu_lei_de_ohm() == "sair":
