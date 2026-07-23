@@ -1,4 +1,5 @@
 from util.converte_entrada import converte_entrada
+from util.sair_do_menu import sair_do_menu
 
 def menu_potencia():
     
@@ -17,18 +18,12 @@ def menu_potencia():
         #     corrente = converte_entrada(input("Corrente: "))
 
         #     print(calcular_potencia(potencia, tensao, corrente))
-            print("========================================")
-            print("[c] Continuar")
-            print("[v] voltar ao menu principal")
-            print("[s] sair")
-            continuar = input("Digite sua opção: ")
-
-            match continuar:
-                    case "c":
-                            continue
-                    case "v":
-                            return
-                    case "s":
-                            return "sair"
-                    case _:
-                            print("Opção inválida.")       
+            opcao = sair_do_menu()
+           
+            match opcao:
+                case "c":
+                        continue
+                case "v":
+                        return
+                case "s":
+                        return "sair"      
