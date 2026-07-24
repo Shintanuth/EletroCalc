@@ -3,7 +3,7 @@ def calcular_potencia(potencia, tensao, corrente):
     valores = [potencia, tensao, corrente]
 
     if valores.count(None) != 1:
-        raise ValueError("Digite exatamente dois valores e deixe um em branco para ser calculado.")
+        raise ValueError("Digite ESTRITAMENTE dois valores.")
     
     if potencia is None:    
        
