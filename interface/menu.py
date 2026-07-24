@@ -2,7 +2,7 @@ from interface.menu_lei_de_ohm import menu_lei_de_ohm
 from interface.menu_potencia import menu_potencia
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
-from util.constantes import SEPARADOR, TITULO_MENU_PRINCIPAL, ESPACOS
+from util.constantes import SEPARADOR, TITULO_MENU_PRINCIPAL, ESPACOS, MSG_OPCAO, MSG_FIM
 
 def menu():
     
@@ -17,7 +17,7 @@ def menu():
         print("[0] Sair")
         print(SEPARADOR)
 
-        opcao = input("Escolha uma opção: ")
+        opcao = input(MSG_OPCAO)
 
         match opcao:
             case "0":
@@ -37,7 +37,7 @@ def menu():
             case _:
                 print("Digite uma entrada válida")
 
-    print("Até mais")
+    print(MSG_FIM)
             
 
 
