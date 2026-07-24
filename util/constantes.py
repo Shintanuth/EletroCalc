@@ -10,3 +10,4 @@ ESPACOS_DOIS = 9 * " "
 MSG_OPCAO = "Escolha uma opção: "
 MSG_DOIS_VALORES = "Digite dois valores e deixe um em branco"
 MSG_FIM = "Até mais"
+PI = 3,14159
