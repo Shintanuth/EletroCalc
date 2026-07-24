@@ -1,3 +1,5 @@
+from util.constantes import OHM
+
 def calcular_lei_de_ohm(tensao, corrente, resistencia):
     
     valores = [tensao, corrente, resistencia]
@@ -28,7 +30,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
         
         resultado = tensao / corrente
 
-        return "Resistência", resultado, "Ω"
+        return "Resistência", resultado, OHM
         
     
     

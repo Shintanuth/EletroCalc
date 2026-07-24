@@ -12,3 +12,4 @@ MSG_DOIS_VALORES = "Digite dois valores e deixe um em branco"
 MSG_FIM = "Até mais"
 PI = 3.14159
 FREQUENCIA_PADRAO = 60
+OHM = "Ω"
