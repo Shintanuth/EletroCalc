@@ -1,6 +1,5 @@
 from util.constantes import PI, FREQUENCIA_PADRAO, OHM
 
-
 def calcular_reatancia_indutiva(frequencia, indutancia):
 
     if frequencia is None:
@@ -15,6 +14,6 @@ def calcular_reatancia_indutiva(frequencia, indutancia):
     if indutancia is None:
         raise ValueError("O valor da indutância é obrigatório")
 
-    resultado = 2 * PI * frequencia * indutancia
+    resultado = 1 / (2 * PI * frequencia * indutancia)
     return "XL", resultado, OHM
     
