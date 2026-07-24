@@ -14,9 +14,6 @@ def menu():
         print(" 2 - Potência Elétrica")
         print(" 3 - Reatância Indutiva" )
         print(" 4 - Reatância Capacitiva")
-        print(" 5 - Impedância")
-        print(" 6 - Associação em Série")
-        print(" 7 - Associação em Paralelo")
         print("[0] Sair")
         print(SEPARADOR)
 
@@ -37,12 +34,6 @@ def menu():
             case "4":
                 if menu_reatancia_capacitiva() == "sair":
                     break
-            case "5":
-                print("Função em desenvolvimento...")
-            case "6":
-               print("Função em desenvolvimento...")
-            case "7":
-                print("Função em desenvolvimento...")
             case _:
                 print("Digite uma entrada válida")
 
