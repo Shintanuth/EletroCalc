@@ -2,13 +2,13 @@ from interface.menu_lei_de_ohm import menu_lei_de_ohm
 from interface.menu_potencia import menu_potencia
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
-from util.constantes import SEPARADOR
+from util.constantes import SEPARADOR, TITULO_MENU_PRINCIPAL, ESPACOS
 
 def menu():
     
     while True:
         print(SEPARADOR)
-        print("            ELETROCALC v0.1")
+        print(ESPACOS, TITULO_MENU_PRINCIPAL)
         print(SEPARADOR)
         print(" 1 - Lei de Ohm")
         print(" 2 - Potência Elétrica")
