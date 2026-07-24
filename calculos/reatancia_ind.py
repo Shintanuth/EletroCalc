@@ -7,8 +7,9 @@ def calcular_reatancia_indutiva(frequencia, indutancia):
 
         if indutancia != None:
             resultado = 2 * PI * frequencia * indutancia
-            return resultado
+            return "Indutância", resultado, "H"
 
         raise ValueError("Informe o valor da indutância")
 
-    return 2 * PI * 60 * indutancia
+    resultado = 2 * PI * 60 * indutancia
+    return "Indutância", resultado, "H"
