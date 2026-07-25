@@ -9,11 +9,11 @@ def menu_reatancia_capacitiva():
     while True:
             print(SEPARADOR)
             print(ESPACOS_DOIS, TITULO_MENU_REAT_CAP)
-            print(ESPACOS_DOIS, "Xc = 1 / 2 π x ƒ x C")
+            print(ESPACOS_DOIS, "Xc = 1 / (2 π x ƒ x C)")
             print(SEPARADOR)
             try:
                 frequencia = converte_entrada(input("Frequência: "))
-                capacitancia = converte_entrada(input("Indutância: "))
+                capacitancia = converte_entrada(input("Capacitância: "))
                 print(SEPARADOR)
             
                 grandeza, resultado, unidade = (calcular_reatancia_capacitiva(frequencia, capacitancia))
