@@ -1,4 +1,5 @@
 from util.constantes import PI, FREQUENCIA_PADRAO, OHM
+from util.converte_unidades import micro_farad_para_farad
 
 def calcular_reatancia_capacitiva(frequencia, capacitancia):
 
@@ -14,7 +15,7 @@ def calcular_reatancia_capacitiva(frequencia, capacitancia):
     if  capacitancia <= 0:
             raise ValueError("O valor da capacitância não pode ser 0 e nem negativo")
     
-    capacitancia = capacitancia / 1_000_000
+    capacitancia = micro_farad_para_farad(capacitancia)
     resultado = 1 / (2 * PI * frequencia * capacitancia)
     return "XC", resultado, OHM
     
