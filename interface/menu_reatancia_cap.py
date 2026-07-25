@@ -12,8 +12,8 @@ def menu_reatancia_capacitiva():
             print(ESPACOS_DOIS, "Xc = 1 / (2 π x ƒ x C)")
             print(SEPARADOR)
             try:
-                frequencia = converte_entrada(input("Frequência: "))
-                capacitancia = converte_entrada(input("Capacitância: "))
+                frequencia = converte_entrada(input("Frequência (Hz): "))
+                capacitancia = converte_entrada(input("Capacitância (µF): "))
                 print(SEPARADOR)
             
                 grandeza, resultado, unidade = (calcular_reatancia_capacitiva(frequencia, capacitancia))
