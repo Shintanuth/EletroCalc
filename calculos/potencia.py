@@ -1,3 +1,5 @@
+from util.constantes import WATT, VOLT, AMPERE
+
 def calcular_potencia(potencia, tensao, corrente):
     
     valores = [potencia, tensao, corrente]
@@ -8,7 +10,7 @@ def calcular_potencia(potencia, tensao, corrente):
     if potencia is None:    
        
         resultado = tensao * corrente
-        return "Potência", resultado, "W"
+        return "Potência", resultado, WATT
         
     
     if tensao is None:
@@ -17,7 +19,7 @@ def calcular_potencia(potencia, tensao, corrente):
             raise ValueError("A resistência não pode ser zero")
 
         resultado = potencia / corrente
-        return "Tensão", resultado, "V"
+        return "Tensão", resultado, VOLT
         
         
     
@@ -28,4 +30,4 @@ def calcular_potencia(potencia, tensao, corrente):
         
         resultado = potencia / tensao
 
-        return "Corrente", resultado, "A"
+        return "Corrente", resultado, AMPERE
