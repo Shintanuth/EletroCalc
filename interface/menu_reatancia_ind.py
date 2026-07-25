@@ -10,7 +10,7 @@ def menu_reatancia_indutiva():
     while True:
             print(SEPARADOR)
             print(ESPACOS_DOIS, TITULO_MENU_REAT_IND)
-            print(ESPACOS_DOIS, "XL = 2 x π x ƒ x L")
+            print(ESPACOS_DOIS, "XL = (2 x π x ƒ x L)")
             print(SEPARADOR)
             
             try:
