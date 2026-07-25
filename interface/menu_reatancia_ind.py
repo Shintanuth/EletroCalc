@@ -14,8 +14,8 @@ def menu_reatancia_indutiva():
             print(SEPARADOR)
             
             try:
-                frequencia = converte_entrada(input("Frequência: "))
-                indutancia = converte_entrada(input("Indutância: "))
+                frequencia = converte_entrada(input("Frequência (Hz): "))
+                indutancia = converte_entrada(input("Indutância (mH): "))
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_reatancia_indutiva(frequencia, indutancia))
