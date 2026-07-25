@@ -14,6 +14,7 @@ def calcular_reatancia_capacitiva(frequencia, capacitancia):
     if  capacitancia <= 0:
             raise ValueError("O valor da capacitância não pode ser 0 e nem negativo")
     
+    capacitancia = capacitancia / 1_000_000
     resultado = 1 / (2 * PI * frequencia * capacitancia)
     return "XC", resultado, OHM
     
