@@ -1,4 +1,4 @@
-from util.constantes import OHM
+from util.constantes import OHM, AMPERE, VOLT
 
 def calcular_lei_de_ohm(tensao, corrente, resistencia):
     
@@ -10,7 +10,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
     if tensao is None:    
        
         resultado = corrente * resistencia
-        return "Tensão", resultado, "V"
+        return "Tensão", resultado, VOLT
         
     
     if corrente is None:
@@ -19,7 +19,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
             raise ValueError("A resistência não pode ser zero")
 
         resultado = tensao / resistencia
-        return "Corrente", resultado, "A"
+        return "Corrente", resultado, AMPERE
         
         
     
