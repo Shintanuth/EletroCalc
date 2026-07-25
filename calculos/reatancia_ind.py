@@ -14,6 +14,7 @@ def calcular_reatancia_indutiva(frequencia, indutancia):
     if indutancia is None:
         raise ValueError("O valor da indutância é obrigatório")
 
+    indutancia = indutancia / 1000
     resultado = 2 * PI * frequencia * indutancia
     return "XL", resultado, OHM
     
