@@ -2,7 +2,8 @@ from interface.menu_lei_de_ohm import menu_lei_de_ohm
 from interface.menu_potencia import menu_potencia
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
-from util.constantes import SEPARADOR, TITULO_MENU_PRINCIPAL, ESPACOS, MSG_OPCAO, MSG_FIM
+from util.constantes import SEPARADOR, TITULO_MENU_PRINCIPAL, ESPACOS 
+from util.mensagens import MSG_OPCAO, MSG_FIM
 
 def menu():
     
