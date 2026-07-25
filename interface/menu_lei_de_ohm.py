@@ -18,9 +18,9 @@ def menu_lei_de_ohm():
             print(SEPARADOR)
 
             try:
-                tensao = converte_entrada(input("Tensão: "))
-                corrente = converte_entrada(input("Corrente: "))
-                resistencia = converte_entrada(input("Resistência: "))
+                tensao = converte_entrada(input("Tensão (V): "))
+                corrente = converte_entrada(input("Corrente (A): "))
+                resistencia = converte_entrada(input("Resistência (Ω): "))
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_lei_de_ohm(tensao, corrente, resistencia))

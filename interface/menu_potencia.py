@@ -18,9 +18,9 @@ def menu_potencia():
             print(MSG_DOIS_VALORES)
 
             try:
-                potencia = converte_entrada(input("Potência: "))
-                tensao = converte_entrada(input("Tensão: "))
-                corrente = converte_entrada(input("Corrente: "))
+                potencia = converte_entrada(input("Potência (W): "))
+                tensao = converte_entrada(input("Tensão (V):"))
+                corrente = converte_entrada(input("Corrente (A): "))
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_potencia(potencia, tensao, corrente))
