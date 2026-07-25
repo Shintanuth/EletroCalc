@@ -2,7 +2,8 @@ from util.converte_entrada import converte_entrada
 from util.sair_do_menu import sair_do_menu
 from calculos.potencia import calcular_potencia
 from util.mostrar_resultado import mostrar_resultado
-from util.constantes import SEPARADOR, ESPACOS, TIULO_MENU_POTENCIA, MSG_DOIS_VALORES
+from util.constantes import SEPARADOR, ESPACOS, TIULO_MENU_POTENCIA
+from util.mensagens import MSG_DOIS_VALORES
 
 def menu_potencia():
     
