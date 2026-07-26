@@ -9,11 +9,11 @@ def calcular_reatancia_indutiva(frequencia, indutancia):
     if frequencia <= 0:
         raise ValueError("A frequência não pode ser 0 e nem negativa")
 
-    if indutancia <= 0:
-            raise ValueError("O valor da indutância não pode ser 0 e nem negativo")
-
     if indutancia is None:
         raise ValueError("O valor da indutância é obrigatório")
+
+    if indutancia <= 0:
+        raise ValueError("O valor da indutância não pode ser 0 e nem negativo")
 
     indutancia = mili_henry_para_henry(indutancia)
     resultado = 2 * PI * frequencia * indutancia
