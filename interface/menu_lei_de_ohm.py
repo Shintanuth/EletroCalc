@@ -1,10 +1,9 @@
 from util.converte_entrada import converte_entrada
 from calculos.lei_de_ohm import calcular_lei_de_ohm
 from util.sair_do_menu import sair_do_menu
-from util.mostrar_resultado import mostrar_resultado
 from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_LEI_DE_OHM
 from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho
+from util.interface import mostrar_cabecalho, mostrar_resultado
 
 def menu_lei_de_ohm():
     while True:

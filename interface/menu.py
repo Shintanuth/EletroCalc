@@ -1,5 +1,5 @@
 from interface.menu_lei_de_ohm import menu_lei_de_ohm
-from interface.menu_potencias import menu_potencias
+from interface.menu_potencia import menu_potencias
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
 from util.interface import mostrar_cabecalho

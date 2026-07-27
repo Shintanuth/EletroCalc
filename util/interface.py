@@ -7,4 +7,8 @@ def mostrar_cabecalho(titulo):
     print(f"{titulo:^40}")
     print()
     print(SEPARADOR)
-     
+
+
+def mostrar_resultado(grandeza, resultado, unidade):
+
+    return f'{grandeza} = {resultado:.2f} {unidade}'     

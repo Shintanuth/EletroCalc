@@ -1,8 +1,7 @@
 from util.sair_do_menu import sair_do_menu
 from util import converte_entrada
 from util.constantes import SEPARADOR, ESPACOS_DOIS, TITULO_MENU_REAT_IND
-from util.mostrar_resultado import mostrar_resultado
-from util.interface import mostrar_cabecalho
+from util.interface import mostrar_cabecalho, mostrar_resultado
 from util.converte_entrada import converte_entrada
 from calculos.reatancia_ind import calcular_reatancia_indutiva
 
