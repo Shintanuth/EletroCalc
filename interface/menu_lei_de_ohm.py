@@ -1,18 +1,15 @@
 from util.converte_entrada import converte_entrada
 from calculos.lei_de_ohm import calcular_lei_de_ohm
 from util.sair_do_menu import sair_do_menu
-from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_LEI_DE_OHM
+from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM
 from util.mensagens import MSG_DOIS_VALORES
 from util.interface import mostrar_cabecalho, mostrar_resultado
 
 def menu_lei_de_ohm():
     while True:
            
-            mostrar_cabecalho(TITULO_MENU_LEI_DE_OHM)
+            mostrar_cabecalho(TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM )
 
-            print(ESPACOS, "I = E / R")
-            print(ESPACOS, "E = I x R")
-            print(ESPACOS, "R = E / I")
             print(SEPARADOR)
             print(MSG_DOIS_VALORES)
             print(SEPARADOR)

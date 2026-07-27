@@ -1,5 +1,5 @@
 from util.sair_do_menu import sair_do_menu
-from util.constantes import SEPARADOR, ESPACOS_DOIS, TITULO_MENU_REAT_CAP
+from util.constantes import SEPARADOR, TITULO_MENU_REAT_CAP, FORMULA_REATANCIA_CAPACITIVA
 from util.converte_entrada import converte_entrada
 from util.interface import mostrar_resultado, mostrar_cabecalho
 from calculos.reatancia_cap import calcular_reatancia_capacitiva
@@ -8,10 +8,10 @@ def menu_reatancia_capacitiva():
     
     while True:
             
-            mostrar_cabecalho(TITULO_MENU_REAT_CAP)
+            mostrar_cabecalho(TITULO_MENU_REAT_CAP, FORMULA_REATANCIA_CAPACITIVA)
 
-            print(ESPACOS_DOIS, "Xc = 1 / (2 π x ƒ x C)")
             print(SEPARADOR)
+
             try:
                 frequencia = converte_entrada(input("Frequência (Hz): "))
                 capacitancia = converte_entrada(input("Capacitância (µF): "))

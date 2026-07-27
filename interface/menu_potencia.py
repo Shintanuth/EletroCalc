@@ -1,6 +1,7 @@
 from util.sair_do_menu import sair_do_menu
-from util.constantes import TITULO_MENU_POTENCIAS, ESPACOS_DOIS
-from util.interface import mostrar_cabecalho
+from util.constantes import TITULO_MENU_POTENCIAS,OPCOES_MENU_POTENCIAS
+from util.mensagens import MSG_OPCAO_INVALIDA
+from util.interface import mostrar_cabecalho, mostrar_opcoes
 from interface.menu_potencia_ativa import menu_potencia_ativa
 
 
@@ -10,15 +11,7 @@ def menu_potencias():
 
         mostrar_cabecalho(TITULO_MENU_POTENCIAS)
        
-        print("1 - Potência Ativa")
-        print("2 - Potência Reativa")
-        print("3 - Potência Aparente")
-        print("4 - Fator de Potência")
-        print()
-        print("[v] - Voltar ao menu anterior")
-        print("[s] - Sair")
-       
-        opcao = input("Digite uma opção: ")
+        opcao = mostrar_opcoes(OPCOES_MENU_POTENCIAS)
                    
         match opcao:
             case "1":
@@ -39,4 +32,4 @@ def menu_potencias():
             case "s":
                 return "sair"
             case _:
-                print("Digite uma entrada válida")      
+                print(MSG_OPCAO_INVALIDA)      
