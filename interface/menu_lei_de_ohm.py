@@ -4,12 +4,13 @@ from util.sair_do_menu import sair_do_menu
 from util.mostrar_resultado import mostrar_resultado
 from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_LEI_DE_OHM
 from util.mensagens import MSG_DOIS_VALORES
+from util.interface import mostrar_cabecalho
 
 def menu_lei_de_ohm():
     while True:
-            print(SEPARADOR)
-            print(ESPACOS, TITULO_MENU_LEI_DE_OHM)
-            print()
+           
+            mostrar_cabecalho(TITULO_MENU_LEI_DE_OHM)
+
             print(ESPACOS, "I = E / R")
             print(ESPACOS, "E = I x R")
             print(ESPACOS, "R = E / I")
