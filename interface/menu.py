@@ -3,14 +3,14 @@ from interface.menu_potencia import menu_potencias
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
 from util.interface import mostrar_cabecalho, mostrar_opcoes
-from util.constantes import TITULO_MENU_PRINCIPAL, OPCOES_MENU_PRINCIPAL
+from util.constantes import TITULO_MENU_PRINCIPAL, OPCOES_MENU_PRINCIPAL, VERSAO
 from util.mensagens import MSG_FIM, MSG_OPCAO_INVALIDA
 
 def menu():
     
     while True:
 
-        mostrar_cabecalho(TITULO_MENU_PRINCIPAL)
+        mostrar_cabecalho(TITULO_MENU_PRINCIPAL, VERSAO)
 
         opcao = mostrar_opcoes(OPCOES_MENU_PRINCIPAL, voltar=False)
 

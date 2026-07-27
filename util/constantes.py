@@ -1,7 +1,7 @@
 from math import pi
 
 SEPARADOR = "=" * 40
-VERSAO = "ELETROCALC v0.1"
+VERSAO = "v0.1"
 TITULO_MENU_PRINCIPAL = "ELETROCALC"
 TITULO_MENU_LEI_DE_OHM = "LEI DE OHM"
 TITULO_MENU_POTENCIA = "POTÊNCIA"
@@ -24,8 +24,6 @@ OPCOES_MENU_POTENCIAS = [
                         "Potência Aparente", 
                         "Fator de Potência"
                         ]
-ESPACOS = 14 * " "
-ESPACOS_DOIS = 9 * " "
 PI = pi
 FREQUENCIA_PADRAO = 60
 OHM = "Ω"

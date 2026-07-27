@@ -1,14 +1,17 @@
-from util.constantes import SEPARADOR
+from util.constantes import SEPARADOR, VERSAO
 
-def mostrar_cabecalho(titulo, formula=None):
+def mostrar_cabecalho(titulo, versao=None, subtitulo=None):
 
     print(SEPARADOR)
 
     print()
     print(f"{titulo:^40}")
 
-    if formula:
-        print(f"{formula:^40}")
+    if versao:
+        print(f"{VERSAO:^40}")
+
+    if subtitulo:
+        print(f"{subtitulo:^40}")
 
     print()
     print(SEPARADOR)
@@ -34,7 +37,4 @@ def mostrar_resultado(grandeza, resultado, unidade):
     print()
 
     return f'{grandeza} = {resultado:.2f} {unidade}'
-
-print()
-print(SEPARADOR)
     
