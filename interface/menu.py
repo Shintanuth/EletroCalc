@@ -10,7 +10,7 @@ def menu():
     
     while True:
 
-        mostrar_cabecalho(TITULO_MENU_PRINCIPAL, VERSAO)
+        mostrar_cabecalho(TITULO_MENU_PRINCIPAL, versao=VERSAO)
 
         opcao = mostrar_opcoes(OPCOES_MENU_PRINCIPAL, voltar=False)
 

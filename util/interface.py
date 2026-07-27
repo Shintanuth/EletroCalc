@@ -1,7 +1,8 @@
-from util.constantes import SEPARADOR, VERSAO
-from util.converte_entrada import converte_entrada 
+from util.constantes import SEPARADOR, LARGURA
+from util.converte_entrada import converte_entrada
+from textwrap import fill 
 
-def mostrar_cabecalho(titulo, versao=VERSAO, subtitulo=None):
+def mostrar_cabecalho(titulo, versao=None, subtitulo=None):
 
     print(SEPARADOR)
 
@@ -36,6 +37,7 @@ def mostrar_resultado(grandeza, resultado, unidade):
     f"{SEPARADOR}\n\n"
     f"{'RESULTADO':^40}\n\n"
     f"{grandeza} = {resultado:.2f} {unidade}"
+    f"{SEPARADOR}"
 )
 
 def mostrar_erro(mensagem):
@@ -43,7 +45,9 @@ def mostrar_erro(mensagem):
     print(SEPARADOR)
     print()
 
-    print(f"ERRO: {mensagem}")
+    print(f"{'ERRO':^40}")
+    print()
+    print(f"{str(mensagem):^40}")
 
     print()
     print(SEPARADOR)
@@ -51,3 +55,7 @@ def mostrar_erro(mensagem):
 def ler_entrada(nome_grandeza, unidade):
 
     return converte_entrada(input(f"{nome_grandeza} ({unidade}): "))
+
+def formatar_texto(texto):
+
+    return fill(str(texto), width=LARGURA)
