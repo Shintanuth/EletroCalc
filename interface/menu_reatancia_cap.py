@@ -1,7 +1,6 @@
 from util.sair_do_menu import sair_do_menu
-from util.constantes import SEPARADOR, TITULO_MENU_REAT_CAP, FORMULA_REATANCIA_CAPACITIVA
-from util.converte_entrada import converte_entrada
-from util.interface import mostrar_resultado, mostrar_cabecalho, mostrar_erro
+from util.constantes import SEPARADOR, TITULO_MENU_REAT_CAP, FORMULA_REATANCIA_CAPACITIVA, HERTZ, FARAD 
+from util.interface import mostrar_resultado, mostrar_cabecalho, mostrar_erro, ler_entrada
 from calculos.reatancia_cap import calcular_reatancia_capacitiva
 
 def menu_reatancia_capacitiva():
@@ -13,8 +12,9 @@ def menu_reatancia_capacitiva():
             print(SEPARADOR)
 
             try:
-                frequencia = converte_entrada(input("Frequência (Hz): "))
-                capacitancia = converte_entrada(input("Capacitância (µF): "))
+                frequencia = ler_entrada("Frequência", HERTZ)
+                capacitancia = ler_entrada("Capacitância", FARAD)
+
                 print(SEPARADOR)
             
                 grandeza, resultado, unidade = (calcular_reatancia_capacitiva(frequencia, capacitancia))
@@ -22,7 +22,7 @@ def menu_reatancia_capacitiva():
             
             except ValueError as erro:
                 mostrar_erro(erro)    
-
+                continue
 
             opcao = sair_do_menu()
             

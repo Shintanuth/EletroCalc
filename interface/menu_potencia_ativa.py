@@ -1,9 +1,8 @@
-from util.converte_entrada import converte_entrada
 from util.sair_do_menu import sair_do_menu
 from calculos.potencia import calcular_potencia_ativa
-from util.constantes import SEPARADOR, TITULO_MENU_POTENCIA,FORMULA_POTENCIA_ATIVA
+from util.constantes import SEPARADOR, TITULO_MENU_POTENCIA,FORMULA_POTENCIA_ATIVA, WATT, VOLT, AMPERE
 from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro
+from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada
 
 def menu_potencia_ativa():
     
@@ -16,9 +15,10 @@ def menu_potencia_ativa():
             print(SEPARADOR)
 
             try:
-                potencia = converte_entrada(input("Potência (W): "))
-                tensao = converte_entrada(input("Tensão (V):"))
-                corrente = converte_entrada(input("Corrente (A): "))
+                potencia = ler_entrada("Potência", WATT)
+                tensao = ler_entrada("Tensão", VOLT)
+                corrente = ler_entrada("Corrente", AMPERE)
+
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_potencia_ativa(potencia, tensao, corrente))

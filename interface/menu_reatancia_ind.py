@@ -1,9 +1,7 @@
 from util.sair_do_menu import sair_do_menu
 from util import converte_entrada
-from util.constantes import SEPARADOR, TITULO_MENU_REAT_IND, FORMULA_REATANCIA_INDUTIVA
-from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro
-from util.converte_entrada import converte_entrada
+from util.constantes import SEPARADOR, TITULO_MENU_REAT_IND, FORMULA_REATANCIA_INDUTIVA, HENRY, HERTZ
+from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada
 from calculos.reatancia_ind import calcular_reatancia_indutiva
 
 
@@ -16,8 +14,8 @@ def menu_reatancia_indutiva():
             print(SEPARADOR)
 
             try:
-                frequencia = converte_entrada(input("Frequência (Hz): "))
-                indutancia = converte_entrada(input("Indutância (mH): "))
+                frequencia = ler_entrada("Frequência", HERTZ)
+                indutancia = ler_entrada("Indutância", HENRY)
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_reatancia_indutiva(frequencia, indutancia))

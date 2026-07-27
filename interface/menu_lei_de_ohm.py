@@ -1,9 +1,8 @@
-from util.converte_entrada import converte_entrada
 from calculos.lei_de_ohm import calcular_lei_de_ohm
 from util.sair_do_menu import sair_do_menu
-from util.constantes import SEPARADOR, TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM
+from util.constantes import SEPARADOR, TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM, VOLT, AMPERE, OHM
 from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro
+from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada
 
 def menu_lei_de_ohm():
     while True:
@@ -15,9 +14,9 @@ def menu_lei_de_ohm():
             print(SEPARADOR)
 
             try:
-                tensao = converte_entrada(input("Tensão (V): "))
-                corrente = converte_entrada(input("Corrente (A): "))
-                resistencia = converte_entrada(input("Resistência (Ω): "))
+                tensao = ler_entrada("Tensão", VOLT)
+                corrente = ler_entrada("Corrente", AMPERE)
+                resistencia = ler_entrada("Resistência", OHM)
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_lei_de_ohm(tensao, corrente, resistencia))
