@@ -4,13 +4,14 @@ from calculos.potencia import calcular_potencia_ativa
 from util.mostrar_resultado import mostrar_resultado
 from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_POTENCIA
 from util.mensagens import MSG_DOIS_VALORES
+from util.interface import mostrar_cabecalho
 
 def menu_potencia_ativa():
     
     while True:
-            print(SEPARADOR)
-            print(ESPACOS, TITULO_MENU_POTENCIA)
-            print()
+           
+            mostrar_cabecalho(TITULO_MENU_POTENCIA)
+
             print(ESPACOS, "P = E x I")
             print(ESPACOS, "E = P / I")
             print(ESPACOS, "I = P / E")

@@ -1,15 +1,15 @@
 from util.sair_do_menu import sair_do_menu
-from util.constantes import SEPARADOR, TITULO_MENU_POTENCIAS, ESPACOS_DOIS
+from util.constantes import TITULO_MENU_POTENCIAS, ESPACOS_DOIS
+from util.interface import mostrar_cabecalho
 from interface.menu_potencia_ativa import menu_potencia_ativa
+
 
 def menu_potencias():
 
     while True:
-        print(SEPARADOR)
-        print()
-        print(ESPACOS_DOIS, TITULO_MENU_POTENCIAS)
-        print()
-        print(SEPARADOR)
+
+        mostrar_cabecalho(TITULO_MENU_POTENCIAS)
+       
         print("1 - Potência Ativa")
         print("2 - Potência Reativa")
         print("3 - Potência Aparente")
@@ -25,13 +25,13 @@ def menu_potencias():
                 menu_potencia_ativa()
             case "2":
                 print("Função em desenvolvimento")
-                return
+                continue
             case "3":
                 print("Função em desenvolvimento")
-                return
+                continue
             case "4":
                 print("Função em desenvolvimento")
-                return
+                continue
             case "c":
                 continue
             case "v":
