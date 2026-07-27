@@ -1,9 +1,9 @@
 from util.converte_entrada import converte_entrada
 from calculos.lei_de_ohm import calcular_lei_de_ohm
 from util.sair_do_menu import sair_do_menu
-from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM
+from util.constantes import SEPARADOR, TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM
 from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho, mostrar_resultado
+from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro
 
 def menu_lei_de_ohm():
     while True:
@@ -24,7 +24,7 @@ def menu_lei_de_ohm():
                 print(mostrar_resultado(grandeza, resultado, unidade))
 
             except ValueError as erro:
-                print(erro)
+                mostrar_erro(erro)
                 continue
                 
             

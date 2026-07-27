@@ -1,7 +1,7 @@
 from util.sair_do_menu import sair_do_menu
 from util.constantes import SEPARADOR, TITULO_MENU_REAT_CAP, FORMULA_REATANCIA_CAPACITIVA
 from util.converte_entrada import converte_entrada
-from util.interface import mostrar_resultado, mostrar_cabecalho
+from util.interface import mostrar_resultado, mostrar_cabecalho, mostrar_erro
 from calculos.reatancia_cap import calcular_reatancia_capacitiva
 
 def menu_reatancia_capacitiva():
@@ -21,9 +21,8 @@ def menu_reatancia_capacitiva():
                 print(mostrar_resultado(grandeza, resultado, unidade))
             
             except ValueError as erro:
-                print(erro)    
+                mostrar_erro(erro)    
 
-            print(SEPARADOR)
 
             opcao = sair_do_menu()
             
