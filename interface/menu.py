@@ -1,5 +1,5 @@
 from interface.menu_lei_de_ohm import menu_lei_de_ohm
-from interface.menu_potencia import menu_potencia
+from interface.menu_potencias import menu_potencias
 from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
 from util.constantes import SEPARADOR, TITULO_MENU_PRINCIPAL, ESPACOS 
@@ -27,7 +27,7 @@ def menu():
                 if menu_lei_de_ohm() == "sair":
                     break
             case "2":
-                if menu_potencia() == "sair":
+                if menu_potencias() == "sair":
                     break
             case "3":
                 if menu_reatancia_indutiva() == "sair":

@@ -1,6 +1,6 @@
 from util.constantes import WATT, VOLT, AMPERE
 
-def calcular_potencia(potencia, tensao, corrente):
+def calcular_potencia_ativa(potencia, tensao, corrente):
     
     valores = [potencia, tensao, corrente]
 
@@ -10,9 +10,8 @@ def calcular_potencia(potencia, tensao, corrente):
     if potencia is None:    
        
         resultado = tensao * corrente
-        return "Potência", resultado, WATT
+        return "Potência Ativa", resultado, WATT
         
-    
     if tensao is None:
         
         if corrente == 0:
@@ -21,8 +20,6 @@ def calcular_potencia(potencia, tensao, corrente):
         resultado = potencia / corrente
         return "Tensão", resultado, VOLT
         
-        
-    
     if corrente is None:
     
         if tensao == 0:

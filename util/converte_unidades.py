@@ -1,5 +1,5 @@
-def mili_henry_para_henry(valor):
-    return valor / 1000
+def mh_para_h(valor):
+    return valor / 1_000
 
-def micro_farad_para_farad(valor):
-    return valor / 1000000
+def uf_para_f(valor):
+    return valor / 1_000_000

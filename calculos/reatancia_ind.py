@@ -1,5 +1,5 @@
 from util.constantes import PI, FREQUENCIA_PADRAO, OHM
-from util.converte_unidades import mili_henry_para_henry
+from util.converte_unidades import mh_para_h
 
 def calcular_reatancia_indutiva(frequencia, indutancia):
 
@@ -15,7 +15,7 @@ def calcular_reatancia_indutiva(frequencia, indutancia):
     if indutancia <= 0:
         raise ValueError("O valor da indutância não pode ser 0 e nem negativo")
 
-    indutancia = mili_henry_para_henry(indutancia)
+    indutancia = mh_para_h(indutancia)
     resultado = 2 * PI * frequencia * indutancia
     return "XL", resultado, OHM
     

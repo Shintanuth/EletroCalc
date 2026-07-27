@@ -1,11 +1,11 @@
 from util.converte_entrada import converte_entrada
 from util.sair_do_menu import sair_do_menu
-from calculos.potencia import calcular_potencia
+from calculos.potencia import calcular_potencia_ativa
 from util.mostrar_resultado import mostrar_resultado
 from util.constantes import SEPARADOR, ESPACOS, TITULO_MENU_POTENCIA
 from util.mensagens import MSG_DOIS_VALORES
 
-def menu_potencia():
+def menu_potencia_ativa():
     
     while True:
             print(SEPARADOR)
@@ -23,7 +23,7 @@ def menu_potencia():
                 corrente = converte_entrada(input("Corrente (A): "))
                 print(SEPARADOR)
 
-                grandeza, resultado, unidade = (calcular_potencia(potencia, tensao, corrente))
+                grandeza, resultado, unidade = (calcular_potencia_ativa(potencia, tensao, corrente))
                 print(mostrar_resultado(grandeza, resultado, unidade))
                          
             except ValueError as erro:
