@@ -32,9 +32,20 @@ def mostrar_opcoes(opcoes, voltar=True):
 def mostrar_resultado(grandeza, resultado, unidade):
     print(SEPARADOR)
     print()
+
     str_resultado = "RESULTADO:"
+
     print(f"{str_resultado:^40}")
     print()
 
     return f'{grandeza} = {resultado:.2f} {unidade}'
-    
+
+def mostrar_erro(mensagem):
+
+    print(SEPARADOR)
+    print()
+
+    print(f"ERRO: {mensagem}")
+
+    print()
+    print(SEPARADOR)
