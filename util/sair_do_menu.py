@@ -1,5 +1,5 @@
 from util.constantes import SEPARADOR
-from util.mensagens import ERRO_OPCAO_INVALIDA
+from util.mensagens import MSG_OPCAO_INVALIDA
 
 def sair_do_menu():
     while True:
@@ -13,4 +13,4 @@ def sair_do_menu():
         if opcao in ("c","v","s"):
             return opcao
 
-        print(ERRO_OPCAO_INVALIDA)
+        print(MSG_OPCAO_INVALIDA)
