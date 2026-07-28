@@ -45,7 +45,7 @@ def mostrar_erro(mensagem):
     print(SEPARADOR)
     print()
 
-    print(f"{'ERRO':^{LARGURA}}")
+    print(f"{'ERRO:':^{LARGURA}}")
     print()
     print(formatar_texto(mensagem))
 
@@ -59,3 +59,14 @@ def ler_entrada(nome_grandeza, unidade):
 def formatar_texto(texto):
 
     return fill(str(texto), width=LARGURA)
+
+def formatar_aviso(aviso):
+    print(SEPARADOR)
+    print()
+    
+    print(f"{'AVISO!':^{LARGURA}}")
+    print()
+    print(formatar_texto(aviso))
+    
+    print()
+    print(SEPARADOR)

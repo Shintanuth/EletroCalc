@@ -1,7 +1,7 @@
 from util.sair_do_menu import sair_do_menu
 from util.constantes import TITULO_MENU_POTENCIAS,OPCOES_MENU_POTENCIAS
 from util.mensagens import MSG_OPCAO_INVALIDA
-from util.interface import mostrar_cabecalho, mostrar_opcoes
+from util.interface import mostrar_cabecalho, mostrar_opcoes, formatar_aviso, formatar_texto
 from interface.menu_potencia_ativa import menu_potencia_ativa
 
 
@@ -17,13 +17,13 @@ def menu_potencias():
             case "1":
                 menu_potencia_ativa()
             case "2":
-                print("Função em desenvolvimento")
+                print(formatar_aviso(formatar_texto("Função em desenvolvimento")))
                 continue
             case "3":
-                print("Função em desenvolvimento")
+                print(formatar_aviso(formatar_texto("Função em desenvolvimento")))
                 continue
             case "4":
-                print("Função em desenvolvimento")
+                print(formatar_aviso(formatar_texto("Função em desenvolvimento")))
                 continue
             case "c":
                 continue
