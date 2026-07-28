@@ -1,3 +1,5 @@
+from util.mensagens import ERRO_ENTRADA_NUMERICA
+
 def converte_entrada(entrada):
     
     if entrada:
@@ -5,6 +7,6 @@ def converte_entrada(entrada):
             entrada_convertida = float(entrada)
             return entrada_convertida
         except ValueError:
-            raise ValueError("Digite um valor válido")
+            raise ValueError(ERRO_ENTRADA_NUMERICA)
     else:
         return None

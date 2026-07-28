@@ -1,6 +1,6 @@
 from util.sair_do_menu import sair_do_menu
 from util.constantes import TITULO_MENU_POTENCIAS,OPCOES_MENU_POTENCIAS
-from util.mensagens import MSG_OPCAO_INVALIDA
+from util.mensagens import ERRO_OPCAO_INVALIDA
 from util.interface import mostrar_cabecalho, mostrar_opcoes
 from interface.menu_potencia_ativa import menu_potencia_ativa
 
@@ -32,4 +32,4 @@ def menu_potencias():
             case "s":
                 return "sair"
             case _:
-                print(MSG_OPCAO_INVALIDA)      
+                print(ERRO_OPCAO_INVALIDA)      

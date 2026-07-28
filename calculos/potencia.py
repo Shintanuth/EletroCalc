@@ -1,11 +1,12 @@
 from util.constantes import WATT, VOLT, AMPERE
+from util.mensagens import ERRO_DOIS_VALORES, ERRO_CORRENTE_POSITIVA, ERRO_TENSAO_POSITIVA
 
 def calcular_potencia_ativa(potencia, tensao, corrente):
     
     valores = [potencia, tensao, corrente]
 
     if valores.count(None) != 1:
-        raise ValueError("Digite ESTRITAMENTE dois valores.")
+        raise ValueError(ERRO_DOIS_VALORES)
     
     if potencia is None:    
        
@@ -15,7 +16,7 @@ def calcular_potencia_ativa(potencia, tensao, corrente):
     if tensao is None:
         
         if corrente == 0:
-            raise ValueError("A resistência não pode ser zero")
+            raise ValueError(ERRO_CORRENTE_POSITIVA)
 
         resultado = potencia / corrente
         return "Tensão", resultado, VOLT
@@ -23,7 +24,7 @@ def calcular_potencia_ativa(potencia, tensao, corrente):
     if corrente is None:
     
         if tensao == 0:
-            raise ValueError("A corrente não pode ser zero")
+            raise ValueError(ERRO_TENSAO_POSITIVA)
         
         resultado = potencia / tensao
 

@@ -1,11 +1,12 @@
 from util.constantes import OHM, AMPERE, VOLT
+from util.mensagens import ERRO_DOIS_VALORES, ERRO_CORRENTE_POSITIVA, ERRO_RESISTENCIA_POSITIVA
 
 def calcular_lei_de_ohm(tensao, corrente, resistencia):
     
     valores = [tensao, corrente, resistencia]
 
     if valores.count(None) != 1:
-        raise ValueError("Digite exatamente dois valores e deixe um em branco para ser calculado.")
+        raise ValueError(ERRO_DOIS_VALORES)
     
     if tensao is None:    
        
@@ -16,7 +17,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
     if corrente is None:
         
         if resistencia == 0:
-            raise ValueError("A resistência não pode ser zero")
+            raise ValueError(ERRO_RESISTENCIA_POSITIVA)
 
         resultado = tensao / resistencia
         return "Corrente", resultado, AMPERE
@@ -26,7 +27,7 @@ def calcular_lei_de_ohm(tensao, corrente, resistencia):
     if resistencia is None:
     
         if corrente == 0:
-            raise ValueError("A corrente não pode ser zero")
+            raise ValueError(ERRO_CORRENTE_POSITIVA)
         
         resultado = tensao / corrente
 

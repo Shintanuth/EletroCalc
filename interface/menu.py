@@ -4,7 +4,7 @@ from interface.menu_reatancia_ind import menu_reatancia_indutiva
 from interface.menu_reatancia_cap import menu_reatancia_capacitiva
 from util.interface import mostrar_cabecalho, mostrar_opcoes
 from util.constantes import TITULO_MENU_PRINCIPAL, OPCOES_MENU_PRINCIPAL, VERSAO
-from util.mensagens import MSG_FIM, MSG_OPCAO_INVALIDA
+from util.mensagens import MSG_FIM, ERRO_OPCAO_INVALIDA
 
 def menu():
     
@@ -30,7 +30,7 @@ def menu():
                 if menu_reatancia_capacitiva() == "sair":
                     break
             case _:
-                print(MSG_OPCAO_INVALIDA)
+                print(ERRO_OPCAO_INVALIDA)
 
     print(MSG_FIM)
             
