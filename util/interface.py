@@ -45,9 +45,9 @@ def mostrar_erro(mensagem):
     print(SEPARADOR)
     print()
 
-    print(f"{'ERRO':^40}")
+    print(f"{'ERRO':^{LARGURA}}")
     print()
-    print(f"{str(mensagem):^40}")
+    print(formatar_texto(mensagem))
 
     print()
     print(SEPARADOR)
