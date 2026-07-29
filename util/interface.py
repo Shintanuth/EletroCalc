@@ -1,5 +1,5 @@
 from textwrap import fill 
-from util.converte_entrada import converte_entrada
+from util.conversores import converte_entrada
 from util.constantes import SEPARADOR, LARGURA
 from util.mensagens import (
                             TITULO_ERRO, 
