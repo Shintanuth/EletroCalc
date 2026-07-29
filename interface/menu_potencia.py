@@ -1,4 +1,3 @@
-from util.sair_do_menu import sair_do_menu
 from util.constantes import TITULO_MENU_POTENCIAS,OPCOES_MENU_POTENCIAS
 from util.mensagens import MSG_OPCAO_INVALIDA, MSG_EM_DESENVOLVIMENTO
 from util.interface import mostrar_cabecalho, mostrar_opcoes, mostrar_aviso, formatar_texto

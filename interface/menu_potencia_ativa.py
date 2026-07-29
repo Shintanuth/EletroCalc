@@ -1,8 +1,7 @@
-from util.sair_do_menu import sair_do_menu
 from calculos.potencia import calcular_potencia_ativa
 from util.constantes import SEPARADOR, TITULO_MENU_POTENCIA,FORMULA_POTENCIA_ATIVA, WATT, VOLT, AMPERE
 from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada
+from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada, sair_do_menu
 
 def menu_potencia_ativa():
     

@@ -1,6 +1,5 @@
-from util.sair_do_menu import sair_do_menu
 from util.constantes import SEPARADOR, TITULO_MENU_REAT_CAP, FORMULA_REATANCIA_CAPACITIVA, HERTZ, FARAD 
-from util.interface import mostrar_resultado, mostrar_cabecalho, mostrar_erro, ler_entrada
+from util.interface import mostrar_resultado, mostrar_cabecalho, mostrar_erro, ler_entrada, sair_do_menu
 from calculos.reatancia_cap import calcular_reatancia_capacitiva
 
 def menu_reatancia_capacitiva():

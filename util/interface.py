@@ -1,7 +1,21 @@
 from util.constantes import SEPARADOR, LARGURA
-from util.mensagens import TITULO_ERRO, TITULO_AVISO, TITULO_ATENCAO, TITULO_SUCESSO
+from util.mensagens import TITULO_ERRO, TITULO_AVISO, TITULO_ATENCAO, TITULO_SUCESSO, MSG_OPCAO_INVALIDA
 from util.converte_entrada import converte_entrada
 from textwrap import fill 
+
+def sair_do_menu():
+    while True:
+        print(SEPARADOR)
+        print("[c] Continuar")
+        print("[v] voltar ao menu principal")
+        print("[s] sair")
+        print(SEPARADOR)
+        opcao = input("Digite sua opção: ").strip().lower()
+        
+        if opcao in ("c","v","s"):
+            return opcao
+
+        print(MSG_OPCAO_INVALIDA)
 
 def mostrar_cabecalho(titulo, versao=None, subtitulo=None):
 
