@@ -1,4 +1,5 @@
 from util.constantes import SEPARADOR, LARGURA
+from util.mensagens import TITULO_ERRO, TITULO_AVISO, TITULO_ATENCAO, TITULO_SUCESSO
 from util.converte_entrada import converte_entrada
 from textwrap import fill 
 
@@ -37,15 +38,14 @@ def mostrar_resultado(grandeza, resultado, unidade):
     f"{SEPARADOR}\n\n"
     f"{'RESULTADO':^40}\n\n"
     f"{grandeza} = {resultado:.2f} {unidade}"
-    f"{SEPARADOR}"
 )
 
-def mostrar_erro(mensagem):
+def mostrar_mensagem(titulo, mensagem):
 
     print(SEPARADOR)
     print()
 
-    print(f"{'ERRO:':^{LARGURA}}")
+    print(f"{titulo:^{LARGURA}}")
     print()
     print(formatar_texto(mensagem))
 
@@ -60,13 +60,14 @@ def formatar_texto(texto):
 
     return fill(str(texto), width=LARGURA)
 
-def formatar_aviso(aviso):
-    print(SEPARADOR)
-    print()
-    
-    print(f"{'AVISO!':^{LARGURA}}")
-    print()
-    print(formatar_texto(aviso))
-    
-    print()
-    print(SEPARADOR)
+def mostrar_erro(mensagem):
+    mostrar_mensagem(TITULO_ERRO, mensagem)
+
+def mostrar_aviso(mensagem):
+    mostrar_mensagem(TITULO_AVISO, mensagem)
+
+def mostrar_sucesso(mensagem):
+    mostrar_mensagem(TITULO_SUCESSO, mensagem)
+
+def mostrar_atencao(mensagem):
+    mostrar_mensagem(TITULO_ATENCAO, mensagem)

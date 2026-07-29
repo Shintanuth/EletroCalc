@@ -8,6 +8,16 @@ MSG_FIM = "Até mais"
 MSG_OPCAO_INVALIDA = "Digite uma entrada válida."
 
 # ===========================
+# Título de mensagens
+# ===========================
+
+TITULO_ERRO = "ERRO:"
+TITULO_AVISO = "AVISO!"
+TITULO_RESULTADO = "RESULTADO:"
+TITULO_ATENCAO = "ATENÇÃO!"
+TITULO_SUCESSO = "SUCESSO!"
+
+# ===========================
 # Mensagens de erro 
 # ===========================
 
