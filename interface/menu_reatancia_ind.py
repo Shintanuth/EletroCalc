@@ -1,7 +1,18 @@
-from util.constantes import SEPARADOR, TITULO_MENU_REAT_IND, FORMULA_REATANCIA_INDUTIVA, HENRY, HERTZ
-from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada, sair_do_menu
 from calculos.reatancia_ind import calcular_reatancia_indutiva
-
+from util.constantes import (
+                             SEPARADOR, 
+                             TITULO_MENU_REAT_IND, 
+                             FORMULA_REATANCIA_INDUTIVA, 
+                             HENRY, 
+                             HERTZ
+                             )
+from util.interface import (
+                            mostrar_cabecalho, 
+                            mostrar_resultado, 
+                            mostrar_erro, 
+                            ler_entrada, 
+                            sair_do_menu
+                            )
 
 def menu_reatancia_indutiva():
     

@@ -1,7 +1,20 @@
 from calculos.lei_de_ohm import calcular_lei_de_ohm
-from util.constantes import SEPARADOR, TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM, VOLT, AMPERE, OHM
 from util.mensagens import MSG_DOIS_VALORES
-from util.interface import mostrar_cabecalho, mostrar_resultado, mostrar_erro, ler_entrada, sair_do_menu
+from util.constantes import (
+                             SEPARADOR, 
+                             TITULO_MENU_LEI_DE_OHM, 
+                             FORMULA_LEI_DE_OHM, 
+                             VOLT, AMPERE, 
+                             OHM
+                             )
+from util.interface import (
+                            mostrar_cabecalho, 
+                            mostrar_resultado, 
+                            mostrar_erro, 
+                            ler_entrada, 
+                            sair_do_menu, 
+                            formatar_texto
+                            )
 
 def menu_lei_de_ohm():
     while True:
@@ -9,7 +22,7 @@ def menu_lei_de_ohm():
             mostrar_cabecalho(TITULO_MENU_LEI_DE_OHM, FORMULA_LEI_DE_OHM )
 
             print(SEPARADOR)
-            print(MSG_DOIS_VALORES)
+            print(formatar_texto(MSG_DOIS_VALORES))
             print(SEPARADOR)
 
             try:

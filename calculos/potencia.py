@@ -1,5 +1,9 @@
 from util.constantes import WATT, VOLT, AMPERE
-from util.mensagens import ERRO_DOIS_VALORES, ERRO_CORRENTE_POSITIVA, ERRO_TENSAO_POSITIVA
+from util.mensagens import (
+                            ERRO_DOIS_VALORES, 
+                            ERRO_CORRENTE_POSITIVA, 
+                            ERRO_TENSAO_POSITIVA
+                            )
 
 def calcular_potencia_ativa(potencia, tensao, corrente):
     

@@ -1,5 +1,9 @@
 from util.constantes import OHM, AMPERE, VOLT
-from util.mensagens import ERRO_DOIS_VALORES, ERRO_CORRENTE_POSITIVA, ERRO_RESISTENCIA_POSITIVA
+from util.mensagens import (
+                            ERRO_DOIS_VALORES, 
+                            ERRO_CORRENTE_POSITIVA, 
+                            ERRO_RESISTENCIA_POSITIVA
+                            )
 
 def calcular_lei_de_ohm(tensao, corrente, resistencia):
     

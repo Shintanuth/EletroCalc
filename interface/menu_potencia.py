@@ -1,6 +1,11 @@
 from util.constantes import TITULO_MENU_POTENCIAS,OPCOES_MENU_POTENCIAS
 from util.mensagens import MSG_OPCAO_INVALIDA, MSG_EM_DESENVOLVIMENTO
-from util.interface import mostrar_cabecalho, mostrar_opcoes, mostrar_aviso, formatar_texto
+from util.interface import (
+                            mostrar_cabecalho, 
+                            mostrar_opcoes, 
+                            mostrar_aviso, 
+                            formatar_texto
+                            )
 from interface.menu_potencia_ativa import menu_potencia_ativa
 
 
@@ -31,4 +36,4 @@ def menu_potencias():
             case "s":
                 return "sair"
             case _:
-                print(MSG_OPCAO_INVALIDA)      
+                print(formatar_texto(formatar_texto(MSG_OPCAO_INVALIDA)))      

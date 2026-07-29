@@ -1,6 +1,10 @@
 from util.constantes import PI, FREQUENCIA_PADRAO, OHM
 from util.converte_unidades import uf_para_f
-from util.mensagens import ERRO_FREQUENCIA_POSITIVA, ERRO_CAPACITANCIA_OBRIGATORIA, ERRO_CAPACITANCIA_POSITIVA
+from util.mensagens import(
+                           ERRO_FREQUENCIA_POSITIVA, 
+                           ERRO_CAPACITANCIA_OBRIGATORIA, 
+                           ERRO_CAPACITANCIA_POSITIVA
+                           )
 
 def calcular_reatancia_capacitiva(frequencia, capacitancia):
 

@@ -1,6 +1,10 @@
 from util.constantes import PI, FREQUENCIA_PADRAO, OHM
 from util.converte_unidades import mh_para_h
-from util.mensagens import ERRO_FREQUENCIA_POSITIVA, ERRO_INDUTANCIA_OBRIGATORIA, ERRO_INDUTANCIA_POSITIVA
+from util.mensagens import (
+                            ERRO_FREQUENCIA_POSITIVA, 
+                            ERRO_INDUTANCIA_OBRIGATORIA, 
+                            ERRO_INDUTANCIA_POSITIVA
+                            )
 
 def calcular_reatancia_indutiva(frequencia, indutancia):
 

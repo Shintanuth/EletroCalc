@@ -1,7 +1,13 @@
-from util.constantes import SEPARADOR, LARGURA
-from util.mensagens import TITULO_ERRO, TITULO_AVISO, TITULO_ATENCAO, TITULO_SUCESSO, MSG_OPCAO_INVALIDA
-from util.converte_entrada import converte_entrada
 from textwrap import fill 
+from util.converte_entrada import converte_entrada
+from util.constantes import SEPARADOR, LARGURA
+from util.mensagens import (
+                            TITULO_ERRO, 
+                            TITULO_AVISO, 
+                            TITULO_ATENCAO, 
+                            TITULO_SUCESSO, 
+                            MSG_OPCAO_INVALIDA
+                            )
 
 def sair_do_menu():
     while True:
