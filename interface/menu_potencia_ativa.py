@@ -12,7 +12,7 @@ from util.interface import (
                             mostrar_cabecalho, 
                             mostrar_resultado, 
                             mostrar_erro, 
-                            ler_entrada, 
+                            ler_grandeza, 
                             sair_do_menu,
                             formatar_texto
                             )
@@ -27,9 +27,9 @@ def menu_potencia_ativa():
             print(SEPARADOR)
 
             try:
-                potencia = ler_entrada("Potência", WATT)
-                tensao = ler_entrada("Tensão", VOLT)
-                corrente = ler_entrada("Corrente", AMPERE)
+                potencia = ler_grandeza("Potência", WATT)
+                tensao = ler_grandeza("Tensão", VOLT)
+                corrente = ler_grandeza("Corrente", AMPERE)
 
                 print(SEPARADOR)
 

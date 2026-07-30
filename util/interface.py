@@ -70,7 +70,7 @@ def mostrar_mensagem(titulo, mensagem):
     print()
     print(SEPARADOR)
 
-def ler_entrada(nome_grandeza, unidade):
+def ler_grandeza(nome_grandeza, unidade):
 
     return converte_entrada(input(f"{nome_grandeza} ({unidade}): "))
 

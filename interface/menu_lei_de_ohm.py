@@ -11,7 +11,7 @@ from util.interface import (
                             mostrar_cabecalho, 
                             mostrar_resultado, 
                             mostrar_erro, 
-                            ler_entrada, 
+                            ler_grandeza, 
                             sair_do_menu, 
                             formatar_texto
                             )
@@ -26,9 +26,9 @@ def menu_lei_de_ohm():
             print(SEPARADOR)
 
             try:
-                tensao = ler_entrada("Tensão", VOLT)
-                corrente = ler_entrada("Corrente", AMPERE)
-                resistencia = ler_entrada("Resistência", OHM)
+                tensao = ler_grandeza("Tensão", VOLT)
+                corrente = ler_grandeza("Corrente", AMPERE)
+                resistencia = ler_grandeza("Resistência", OHM)
                 print(SEPARADOR)
 
                 grandeza, resultado, unidade = (calcular_lei_de_ohm(tensao, corrente, resistencia))

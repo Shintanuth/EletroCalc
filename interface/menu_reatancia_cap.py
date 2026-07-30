@@ -9,7 +9,7 @@ from util.constantes import (
 from util.interface import (mostrar_resultado, 
                             mostrar_cabecalho, 
                             mostrar_erro, 
-                            ler_entrada, 
+                            ler_grandeza, 
                             sair_do_menu
                             )
 
@@ -23,8 +23,8 @@ def menu_reatancia_capacitiva():
             print(SEPARADOR)
 
             try:
-                frequencia = ler_entrada("Frequência", HERTZ)
-                capacitancia = ler_entrada("Capacitância", FARAD)
+                frequencia = ler_grandeza("Frequência", HERTZ)
+                capacitancia = ler_grandeza("Capacitância", FARAD)
 
                 print(SEPARADOR)
             
