@@ -28,7 +28,7 @@ def menu():
 
         mostrar_cabecalho(TITULO_MENU_PRINCIPAL, versao=VERSAO)
 
-        opcao = mostrar_opcoes(OPCOES_MENU_PRINCIPAL, voltar=False)
+        mostrar_opcoes(OPCOES_MENU_PRINCIPAL, voltar=False)
 
         try:
             opcao = input(MSG_OPCAO)
@@ -37,7 +37,7 @@ def menu():
 
         except ValueError as erro:
             mostrar_erro(TITULO_ERRO, erro)
-        
+            continue
 
         match opcao:
             case "s":
