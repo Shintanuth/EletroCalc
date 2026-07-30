@@ -17,6 +17,13 @@ def validar_obrigatorio_positivo(valor, erro_obrigatorio, erro_invalido):
     validar_obrigatorio(valor, erro_obrigatorio)
     validar_maior_que_zero(valor, erro_invalido)
 
+def validar_intervalo(valor, minimo, maximo, nome):
+
+    if valor < minimo or valor > maximo:
+        raise ValueError(
+            f"{nome} deve estar entre {minimo} e {maximo}"
+        )
+
 # ===========================
 # Validações de Menu
 # ===========================

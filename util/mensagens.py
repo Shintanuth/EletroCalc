@@ -42,6 +42,32 @@ ERRO_INDUTANCIA_OBRIGATORIA = "A indutância deve ser informada."
 
 ERRO_CAPACITANCIA_OBRIGATORIA = "A capacitância deve ser informada."
 
+ERRO_POTENCIA_OBRIGATORIA = "A potência deve ser informada."
+
+ERRO_FATOR_DE_POTENCIA_OBRIGATORIO = "O fator de potência deve ser informado."
+
+ERRO_POTENCIA_ATIVA_OBRIGATORIO = "A potência ativa deve ser informada."
+
+ERRO_POTENCIA_APARENTE_OBRIGATORIO = "A potência aparente deve ser informada."
+
+ERRO_POTENCIA_REATIVA_OBRIGATORIA = "A potência reativa deve ser informada."
+
+ERRO_POTENCIA_ATIVA_POSITIVA = (
+    "A potência ativa deve ser maior que zero."
+)
+
+ERRO_POTENCIA_APARENTE_POSITIVA = (
+    "A potência aparente deve ser maior que zero."
+)
+
+ERRO_POTENCIA_REATIVA_POSITIVA = (
+    "A potência reativa deve ser maior que zero."
+)
+
+ERRO_FATOR_DE_POTENCIA_POSITIVO = (
+    "O fator de potência deve ser maior que zero."
+)
+
 ERRO_POTENCIA_POSITIVA = (
     "A potência deve ser maior que zero."
 )
