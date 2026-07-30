@@ -14,8 +14,10 @@ from util.interface import (
                             mostrar_opcoes, 
                             mostrar_erro,
                             mostrar_aviso,
-                            formatar_texto
+                            formatar_texto,
+                            mostrar_resultado
                             )
+from calculos.potencia_aparente import calcular_potencia_aparente_por_tensao_e_corrente
 
 def menu_potencia_aparente():
 
@@ -23,7 +25,7 @@ def menu_potencia_aparente():
 
         mostrar_cabecalho(TITULO_MENU_POTENCIA_APARENTE)
 
-        opcao = mostrar_opcoes(formatar_texto(OPCOES_MENU_POTENCIA_APARENTE))
+        opcao = mostrar_opcoes(OPCOES_MENU_POTENCIA_APARENTE)
 
 
         try:

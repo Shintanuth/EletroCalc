@@ -8,9 +8,7 @@ from util.mensagens import (
                             ERRO_POTENCIA_ATIVA_POSITIVA,
                             ERRO_POTENCIA_ATIVA_OBRIGATORIA,
                             ERRO_POTENCIA_REATIVA_OBRIGATORIA,
-                            ERRO_POTENCIA_REATIVA_POSITIVA,
                             ERRO_FATOR_DE_POTENCIA_OBRIGATORIO,
-                            ERRO_FATOR_DE_POTENCIA_POSITIVO
                             )
 from math import sqrt
 
@@ -52,7 +50,6 @@ def calcular_potencia_aparente_por_potencia_ativa_e_potencia_reativa(potencia_at
         
     validar_valores_positivos([
                     (potencia_ativa, ERRO_POTENCIA_ATIVA_POSITIVA),
-                    (potencia_reativa, ERRO_POTENCIA_REATIVA_POSITIVA)
                 ])
 
     return sqrt((potencia_ativa**2) + (potencia_reativa**2))
