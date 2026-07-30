@@ -26,9 +26,10 @@ OPCOES_MENU_POTENCIAS = [
                         "Potência Aparente", 
                         "Fator de Potência"
                         ]
-OPCOES_MENU_POTENCIA_APARENTE = ["Calcular por Tensão e Corrente",
-                                 "Calcular por Potência Ativa e Fator de Potência",
-                                 "Calcular por Potência Ativa e Potência Reativa"
+OPCOES_MENU_POTENCIA_APARENTE = [
+                                 "Tensão (V) + Corrente (A)",
+                                 "Potência Ativa (W) + Fator de Potência",
+                                 "Potência Ativa (W) + Potência Reativa (Var)"
                                 ]
 SELETOR_MENU_PRINCIPAL = ["s", "1", "2", "3", "4"]
 SELETOR_MENU_POTENCIAS = ["s", "v", "c", "1", "2", "3", "4"]
