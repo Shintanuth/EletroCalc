@@ -17,6 +17,7 @@ from util.interface import (
                             )
 from util.validacoes import validar_opcao
 from interface.menu_potencia_ativa import menu_potencia_ativa
+from interface.menu_potencia_aparente import menu_potencia_aparente
 
 def menu_potencias():
 
@@ -33,7 +34,7 @@ def menu_potencias():
 
         except ValueError as erro:
             mostrar_erro(erro)
-                   
+    
         match opcao:
             case "1":
                 menu_potencia_ativa()
@@ -41,8 +42,7 @@ def menu_potencias():
                 print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
                 continue
             case "3":
-                print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
-                continue
+                menu_potencia_aparente()
             case "4":
                 print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
                 continue

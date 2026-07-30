@@ -30,3 +30,4 @@ def calcular_potencia_ativa(potencia, tensao, corrente):
         return "Tensão", potencia / corrente, VOLT
   
     return "Corrente", potencia / tensao, AMPERE
+
