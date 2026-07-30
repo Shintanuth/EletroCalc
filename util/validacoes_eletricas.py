@@ -19,4 +19,6 @@ def validar_quantidade_none(valores, quantidade_none, mensagem):
 def validar_valores_positivos(valores):
 
      for valor, mensagem in valores:
-          validar_maior_que_zero(valor, mensagem)
+
+          if valor is not None:
+            validar_maior_que_zero(valor, mensagem)

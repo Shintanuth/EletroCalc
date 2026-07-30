@@ -1,5 +1,5 @@
 from util.constantes import PI, FREQUENCIA_PADRAO, OHM
-from util.converte_unidades import mh_para_h
+from util.conversores import mh_para_h
 from util.mensagens import (
                             ERRO_FREQUENCIA_POSITIVA, 
                             ERRO_INDUTANCIA_OBRIGATORIA, 
