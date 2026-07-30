@@ -8,7 +8,6 @@ from util.mensagens import (
                             MSG_EM_DESENVOLVIMENTO,
                             MSG_OPCAO,
                             ERRO_OPCAO_INVALIDA,
-                            TITULO_ERRO
                             )
 from util.interface import (
                             mostrar_cabecalho, 
@@ -34,7 +33,7 @@ def menu_potencias():
             validar_opcao(opcao, SELETOR_MENU_POTENCIAS, ERRO_OPCAO_INVALIDA)
 
         except ValueError as erro:
-            mostrar_erro(TITULO_ERRO,erro)
+            mostrar_erro(erro)
                    
         match opcao:
             case "1":

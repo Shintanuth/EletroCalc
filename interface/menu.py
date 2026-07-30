@@ -19,7 +19,6 @@ from util.mensagens import (
                             MSG_FIM, 
                             MSG_OPCAO, 
                             ERRO_OPCAO_INVALIDA, 
-                            TITULO_ERRO
                             )
 
 def menu():
@@ -36,7 +35,7 @@ def menu():
             validar_opcao(opcao, SELETOR_MENU_PRINCIPAL, ERRO_OPCAO_INVALIDA)
 
         except ValueError as erro:
-            mostrar_erro(TITULO_ERRO, erro)
+            mostrar_erro(erro)
             continue
 
         match opcao:
