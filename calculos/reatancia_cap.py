@@ -1,24 +1,26 @@
-from util.constantes import PI, FREQUENCIA_PADRAO, OHM
+from util.constantes import PI, OHM
 from util.conversores import uf_para_f
 from util.mensagens import(
                            ERRO_FREQUENCIA_POSITIVA, 
                            ERRO_CAPACITANCIA_OBRIGATORIA, 
                            ERRO_CAPACITANCIA_POSITIVA
                            )
+from util.validacoes_eletricas import (
+                                       validar_valores_positivos, 
+                                       obter_frequencia
+                                       )
 
 def calcular_reatancia_capacitiva(frequencia, capacitancia):
 
-    if frequencia is None:
-        frequencia = FREQUENCIA_PADRAO
+    frequencia = obter_frequencia(frequencia)
 
-    if frequencia <= 0:
-        raise ValueError(ERRO_FREQUENCIA_POSITIVA)
+    validar_valores_positivos([
+          (frequencia, ERRO_FREQUENCIA_POSITIVA),
+          (capacitancia, ERRO_CAPACITANCIA_POSITIVA)
+    ])
 
     if capacitancia is None:
             raise ValueError(ERRO_CAPACITANCIA_OBRIGATORIA)
-
-    if  capacitancia <= 0:
-            raise ValueError(ERRO_CAPACITANCIA_POSITIVA)
     
     capacitancia = uf_para_f(capacitancia)
     resultado = 1 / (2 * PI * frequencia * capacitancia)

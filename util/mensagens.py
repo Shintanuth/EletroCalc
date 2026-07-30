@@ -42,6 +42,10 @@ ERRO_INDUTANCIA_OBRIGATORIA = "A indutância deve ser informada."
 
 ERRO_CAPACITANCIA_OBRIGATORIA = "A capacitância deve ser informada."
 
+ERRO_POTENCIA_POSITIVA = (
+    "A potência deve ser maior que zero."
+)
+
 ERRO_TENSAO_POSITIVA = (
     "A tensão deve ser maior que zero."
 )

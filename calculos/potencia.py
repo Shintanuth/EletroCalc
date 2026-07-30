@@ -2,34 +2,31 @@ from util.constantes import WATT, VOLT, AMPERE
 from util.mensagens import (
                             ERRO_DOIS_VALORES, 
                             ERRO_CORRENTE_POSITIVA, 
-                            ERRO_TENSAO_POSITIVA
+                            ERRO_TENSAO_POSITIVA,
+                            ERRO_POTENCIA_POSITIVA
                             )
+from util.validacoes_eletricas import (validar_quantidade_none, 
+                                       validar_valores_positivos
+                                       )
 
 def calcular_potencia_ativa(potencia, tensao, corrente):
     
     valores = [potencia, tensao, corrente]
 
-    if valores.count(None) != 1:
-        raise ValueError(ERRO_DOIS_VALORES)
+    validar_quantidade_none(valores, 1, ERRO_DOIS_VALORES)
+
+    validar_valores_positivos([
+        (potencia, ERRO_POTENCIA_POSITIVA),
+        (tensao, ERRO_TENSAO_POSITIVA),
+        (corrente, ERRO_CORRENTE_POSITIVA)
+    ])
     
     if potencia is None:    
        
-        resultado = tensao * corrente
-        return "Potência Ativa", resultado, WATT
+        return "Potência Ativa", tensao * corrente, WATT
         
     if tensao is None:
         
-        if corrente == 0:
-            raise ValueError(ERRO_CORRENTE_POSITIVA)
-
-        resultado = potencia / corrente
-        return "Tensão", resultado, VOLT
-        
-    if corrente is None:
-    
-        if tensao == 0:
-            raise ValueError(ERRO_TENSAO_POSITIVA)
-        
-        resultado = potencia / tensao
-
-        return "Corrente", resultado, AMPERE
+        return "Tensão", potencia / corrente, VOLT
+  
+    return "Corrente", potencia / tensao, AMPERE
