@@ -4,7 +4,6 @@ from util.constantes import (
                              SELETOR_MENU_POTENCIAS
                              )
 from util.mensagens import (
-                            MSG_OPCAO_INVALIDA, 
                             MSG_EM_DESENVOLVIMENTO,
                             MSG_OPCAO,
                             ERRO_OPCAO_INVALIDA,

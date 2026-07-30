@@ -58,7 +58,7 @@ def mostrar_resultado(grandeza, resultado, unidade):
     f"{grandeza} = {resultado:.2f} {unidade}"
 )
 
-def mostrar_mensagem(titulo, mensagem):
+def mostrar_caixa(titulo, mensagem):
 
     print(SEPARADOR)
     print()
@@ -79,13 +79,13 @@ def formatar_texto(texto):
     return fill(str(texto), width=LARGURA)
 
 def mostrar_erro(mensagem):
-    mostrar_mensagem(TITULO_ERRO, mensagem)
+    mostrar_caixa(TITULO_ERRO, mensagem)
 
 def mostrar_aviso(mensagem):
-    mostrar_mensagem(TITULO_AVISO, mensagem)
+    mostrar_caixa(TITULO_AVISO, mensagem)
 
 def mostrar_sucesso(mensagem):
-    mostrar_mensagem(TITULO_SUCESSO, mensagem)
+    mostrar_caixa(TITULO_SUCESSO, mensagem)
 
 def mostrar_atencao(mensagem):
-    mostrar_mensagem(TITULO_ATENCAO, mensagem)
+    mostrar_caixa(TITULO_ATENCAO, mensagem)
