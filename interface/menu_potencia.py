@@ -1,13 +1,24 @@
-from util.constantes import TITULO_MENU_POTENCIAS,OPCOES_MENU_POTENCIAS
-from util.mensagens import MSG_OPCAO_INVALIDA, MSG_EM_DESENVOLVIMENTO
+from util.constantes import (
+                             TITULO_MENU_POTENCIAS,
+                             OPCOES_MENU_POTENCIAS,
+                             SELETOR_MENU_POTENCIAS
+                             )
+from util.mensagens import (
+                            MSG_OPCAO_INVALIDA, 
+                            MSG_EM_DESENVOLVIMENTO,
+                            MSG_OPCAO,
+                            ERRO_OPCAO_INVALIDA,
+                            TITULO_ERRO
+                            )
 from util.interface import (
                             mostrar_cabecalho, 
                             mostrar_opcoes, 
                             mostrar_aviso, 
-                            formatar_texto
+                            formatar_texto,
+                            mostrar_erro
                             )
+from util.validacoes import validar_opcao
 from interface.menu_potencia_ativa import menu_potencia_ativa
-
 
 def menu_potencias():
 
@@ -16,6 +27,14 @@ def menu_potencias():
         mostrar_cabecalho(TITULO_MENU_POTENCIAS)
        
         opcao = mostrar_opcoes(OPCOES_MENU_POTENCIAS)
+
+        try:
+            opcao = input(MSG_OPCAO)
+
+            validar_opcao(opcao, SELETOR_MENU_POTENCIAS, ERRO_OPCAO_INVALIDA)
+
+        except ValueError as erro:
+            mostrar_erro(TITULO_ERRO,erro)
                    
         match opcao:
             case "1":
@@ -35,5 +54,4 @@ def menu_potencias():
                 return
             case "s":
                 return "sair"
-            case _:
-                print(formatar_texto(formatar_texto(MSG_OPCAO_INVALIDA)))      
+   

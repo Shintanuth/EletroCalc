@@ -51,8 +51,6 @@ def mostrar_opcoes(opcoes, voltar=True):
     print("[s] - Sair")
     print(SEPARADOR)
 
-    return input("Digite uma opção: ")
-
 def mostrar_resultado(grandeza, resultado, unidade):
     return (
     f"{SEPARADOR}\n\n"

@@ -25,6 +25,8 @@ OPCOES_MENU_POTENCIAS = [
                         "Potência Aparente", 
                         "Fator de Potência"
                         ]
+SELETOR_MENU_PRINCIPAL = ["s", "1", "2", "3", "4"]
+SELETOR_MENU_POTENCIAS = ["s", "v", "c", "1", "2", "3", "4"]
 PI = pi
 FREQUENCIA_PADRAO = 60
 OHM = "Ω"
