@@ -1,10 +1,9 @@
-from calculos.potencia_aparente import calcular_potencia_aparente_por_tensao_e_corrente
+from calculos.potencia_aparente import calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia
 from util.constantes import (
                              SEPARADOR, 
                              TITULO_MENU_POTENCIA_APARENTE, 
-                             FORMULA_POTENCIA_APARENTE_TENSAO_CORRENTE, 
-                             VOLT, 
-                             AMPERE
+                             FORMULA_POTENCIA_APARENTE_POTENCIA_ATIVA_FATOR_DE_POTENCIA, 
+                             WATT, 
                             )
 from util.interface import (
                             mostrar_cabecalho, 
@@ -14,25 +13,25 @@ from util.interface import (
                             sair_do_menu
                             )
 
-def menu_potencia_aparente_tensao_corrente():
+def menu_potencia_aparente_potencia_ativa_fator_de_potencia():
 
     while True:
 
             mostrar_cabecalho(
                 TITULO_MENU_POTENCIA_APARENTE,
-                FORMULA_POTENCIA_APARENTE_TENSAO_CORRENTE,
+                FORMULA_POTENCIA_APARENTE_POTENCIA_ATIVA_FATOR_DE_POTENCIA,
             )
 
             print(SEPARADOR)
-           
+            
 
             try:
-                tensao = ler_grandeza("Tensão", VOLT)
-                corrente = ler_grandeza("Corrente", AMPERE)
+                tensao = ler_grandeza("Potência Ativa", WATT)
+                corrente = ler_grandeza("Fator de Potências")
 
                 print(SEPARADOR)
 
-                grandeza, resultado, unidade = (calcular_potencia_aparente_por_tensao_e_corrente(tensao, corrente))
+                grandeza, resultado, unidade = (calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(tensao, corrente))
                 print(mostrar_resultado(grandeza, resultado, unidade))
               
 
@@ -49,6 +48,3 @@ def menu_potencia_aparente_tensao_corrente():
                     return
                 case "s":
                     return "sair"
-                    
-            
-                    

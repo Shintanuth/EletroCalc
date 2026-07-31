@@ -70,9 +70,15 @@ def mostrar_caixa(titulo, mensagem):
     print()
     print(SEPARADOR)
 
-def ler_grandeza(nome_grandeza, unidade):
+def ler_grandeza(nome_grandeza, unidade=None):
 
-    return converte_entrada(input(f"{nome_grandeza} ({unidade}): "))
+    
+    mensagem = f"{nome_grandeza}"
+
+    if unidade is not None:
+        mensagem += f" ({unidade})"
+
+    return converte_entrada(input(f"{mensagem}: "))
 
 def formatar_texto(texto):
 

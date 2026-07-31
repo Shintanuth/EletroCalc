@@ -17,8 +17,7 @@ from util.interface import (
                             formatar_texto,
                             )
 from interface.menu_potencia_aparente_tensao_corrente import menu_potencia_aparente_tensao_corrente
-from calculos.potencia_aparente import calcular_potencia_aparente_por_tensao_e_corrente
-
+from interface.menu_potencia_aparente_Potencia_ativa_fator_de_potencia import menu_potencia_aparente_potencia_ativa_fator_de_potencia
 def menu_potencia_aparente():
 
     while True:
@@ -42,8 +41,7 @@ def menu_potencia_aparente():
                     case "1":
                          menu_potencia_aparente_tensao_corrente()
                     case "2":
-                         print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
-                         continue
+                         menu_potencia_aparente_potencia_ativa_fator_de_potencia()
                     case "3":
                          print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
                          continue
