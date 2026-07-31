@@ -1,5 +1,6 @@
 from util.validacoes_eletricas import validar_valores_positivos
 from util.validacoes import validar_obrigatorio, validar_intervalo
+from util.constantes import VOLT_AMPERE
 from util.mensagens import (
                             ERRO_TENSAO_POSITIVA, 
                             ERRO_CORRENTE_POSITIVA, 
@@ -23,7 +24,7 @@ def calcular_potencia_aparente_por_tensao_e_corrente(tensao, corrente):
             (corrente, ERRO_CORRENTE_POSITIVA)
         ])
  
-    return tensao * corrente
+    return "Potência Aparente", tensao * corrente, VOLT_AMPERE
 
 
 def calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(potencia_ativa, fator_de_potencia):
@@ -38,7 +39,7 @@ def calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(potencia_a
 
     validar_intervalo(fator_de_potencia, 0, 1, "O fator de potência")
 
-    return potencia_ativa / fator_de_potencia
+    return "Potência Aparente", potencia_ativa / fator_de_potencia, VOLT_AMPERE 
 
 
 
@@ -52,4 +53,4 @@ def calcular_potencia_aparente_por_potencia_ativa_e_potencia_reativa(potencia_at
                     (potencia_ativa, ERRO_POTENCIA_ATIVA_POSITIVA),
                 ])
 
-    return sqrt((potencia_ativa**2) + (potencia_reativa**2))
+    return "Potência Aparente", sqrt((potencia_ativa**2) + (potencia_reativa**2)), VOLT_AMPERE

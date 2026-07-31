@@ -15,8 +15,8 @@ from util.interface import (
                             mostrar_erro,
                             mostrar_aviso,
                             formatar_texto,
-                            mostrar_resultado
                             )
+from interface.menu_potencia_aparente_tensao_corrente import menu_potencia_aparente_tensao_corrente
 from calculos.potencia_aparente import calcular_potencia_aparente_por_tensao_e_corrente
 
 def menu_potencia_aparente():
@@ -40,8 +40,7 @@ def menu_potencia_aparente():
 
         match opcao:
                     case "1":
-                         print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
-                         continue
+                         menu_potencia_aparente_tensao_corrente()
                     case "2":
                          print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
                          continue
