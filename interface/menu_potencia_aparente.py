@@ -18,6 +18,9 @@ from util.interface import (
                             )
 from interface.menu_potencia_aparente_tensao_corrente import menu_potencia_aparente_tensao_corrente
 from interface.menu_potencia_aparente_Potencia_ativa_fator_de_potencia import menu_potencia_aparente_potencia_ativa_fator_de_potencia
+from interface.menu_potencia_aparente_potencia_ativa_potencia_reativa import menu_potencia_aparente_potencia_ativa_potencia_reativa
+
+
 def menu_potencia_aparente():
 
     while True:
@@ -43,8 +46,7 @@ def menu_potencia_aparente():
                     case "2":
                          menu_potencia_aparente_potencia_ativa_fator_de_potencia()
                     case "3":
-                         print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
-                         continue
+                        menu_potencia_aparente_potencia_ativa_potencia_reativa()
                     case "c":
                         continue
                     case "v":
