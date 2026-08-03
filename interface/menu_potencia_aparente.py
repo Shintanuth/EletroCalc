@@ -13,8 +13,6 @@ from util.interface import (
                             mostrar_cabecalho, 
                             mostrar_opcoes, 
                             mostrar_erro,
-                            mostrar_aviso,
-                            formatar_texto,
                             )
 from interface.menu_potencia_aparente_tensao_corrente import menu_potencia_aparente_tensao_corrente
 from interface.menu_potencia_aparente_potencia_ativa_fator_de_potencia import menu_potencia_aparente_potencia_ativa_fator_de_potencia
