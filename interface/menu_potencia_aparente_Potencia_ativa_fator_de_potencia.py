@@ -26,12 +26,12 @@ def menu_potencia_aparente_potencia_ativa_fator_de_potencia():
             
 
             try:
-                tensao = ler_grandeza("Potência Ativa", WATT)
-                corrente = ler_grandeza("Fator de Potências")
+                potencia_ativa = ler_grandeza("Potência Ativa", WATT)
+                fator_de_potencia = ler_grandeza("Fator de Potências")
 
                 print(SEPARADOR)
 
-                grandeza, resultado, unidade = (calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(tensao, corrente))
+                grandeza, resultado, unidade = (calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(potencia_ativa, fator_de_potencia))
                 print(mostrar_resultado(grandeza, resultado, unidade))
               
 

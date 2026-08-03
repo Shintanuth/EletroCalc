@@ -38,7 +38,7 @@ OPCOES_MENU_POTENCIA_APARENTE = [
                                  "Potência Ativa (W) + Fator de Potência",
                                  "Potência Ativa (W) + Potência Reativa (Var)"
                                 ]
-OPCOES_MENU_POTENCIA_APARENTE_ATIVA = [
+OPCOES_MENU_POTENCIA_ATIVA = [
                                        "Tensão (v) + Corrente (A) + Fator de Potência",
                                        "Potência Aparente (VA) + Fator de Potência",
                                        "Potência Aparente (VA) + Potência Reativa (Var) "

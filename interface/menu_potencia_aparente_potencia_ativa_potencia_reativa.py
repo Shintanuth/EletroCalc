@@ -27,12 +27,12 @@ def menu_potencia_aparente_potencia_ativa_potencia_reativa():
            
 
             try:
-                tensao = ler_grandeza("Potência Ativa", WATT)
-                corrente = ler_grandeza("Potência Reativa", VOLT_AMPERE_REATIVO)
+                potencia_ativa = ler_grandeza("Potência Ativa", WATT)
+                potencia_reativa = ler_grandeza("Potência Reativa", VOLT_AMPERE_REATIVO)
 
                 print(SEPARADOR)
 
-                grandeza, resultado, unidade = (calcular_potencia_aparente_por_potencia_ativa_e_potencia_reativa(tensao, corrente))
+                grandeza, resultado, unidade = (calcular_potencia_aparente_por_potencia_ativa_e_potencia_reativa(potencia_ativa, potencia_reativa))
                 print(mostrar_resultado(grandeza, resultado, unidade))
               
 

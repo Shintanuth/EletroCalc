@@ -48,7 +48,7 @@ ERRO_FATOR_DE_POTENCIA_OBRIGATORIO = "O fator de potência deve ser informado."
 
 ERRO_POTENCIA_ATIVA_OBRIGATORIA = "A potência ativa deve ser informada."
 
-ERRO_POTENCIA_APARENTE_OBRIGATORIO = "A potência aparente deve ser informada."
+ERRO_POTENCIA_APARENTE_OBRIGATORIA = "A potência aparente deve ser informada."
 
 ERRO_POTENCIA_REATIVA_OBRIGATORIA = "A potência reativa deve ser informada."
 
