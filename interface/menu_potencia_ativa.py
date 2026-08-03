@@ -1,4 +1,4 @@
-from calculos.potencia import calcular_potencia_ativa
+from calculos.potencia_ativa import calcular_potencia_ativa
 from util.mensagens import MSG_DOIS_VALORES
 from util.constantes import (
                              SEPARADOR, 
