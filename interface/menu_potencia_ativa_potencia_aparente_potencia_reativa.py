@@ -1,7 +1,8 @@
 from util.constantes import (
                              TITULO_MENU_POTENCIA_ATIVA, 
-                             FORMULA_POTENCIA_ATIVA_POTENCIA_APARENTE_FATOR_DE_POTENCIA,
+                             FORMULA_POTENCIA_ATIVA_POTENCIA_APARENTE_POTENCIA_REATIVA,
                              SEPARADOR,
+                             VOLT_AMPERE_REATIVO,
                              VOLT_AMPERE
                              )
 from util.interface import (
@@ -10,15 +11,15 @@ from util.interface import (
                             mostrar_erro,
                             sair_do_menu
                             )
-from calculos.potencia_ativa import calcular_potencia_ativa_potencia_aparente_fator_de_potencia
+from calculos.potencia_ativa import calcular_potencia_ativa_potencia_aparente_potencia_reativa
 
-def menu_potencia_ativa_potencia_aparente_fator_de_potencia():
+def menu_potencia_ativa_potencia_aparente_potencia_reativa():
 
     while True:
     
                 mostrar_cabecalho(
                     TITULO_MENU_POTENCIA_ATIVA,
-                    FORMULA_POTENCIA_ATIVA_POTENCIA_APARENTE_FATOR_DE_POTENCIA,
+                    FORMULA_POTENCIA_ATIVA_POTENCIA_APARENTE_POTENCIA_REATIVA,
                 )
     
                 print(SEPARADOR)
@@ -26,11 +27,11 @@ def menu_potencia_ativa_potencia_aparente_fator_de_potencia():
     
                 try:
                     potencia_aparente = ler_grandeza("Potência Aparente", VOLT_AMPERE)
-                    fator_de_potencia = ler_grandeza("Fator de Potências")
+                    potencia_reativa = ler_grandeza("Potência Reativa", VOLT_AMPERE_REATIVO)
     
                     print(SEPARADOR)
     
-                    grandeza, resultado, unidade = (calcular_potencia_ativa_potencia_aparente_fator_de_potencia(potencia_aparente, fator_de_potencia))
+                    grandeza, resultado, unidade = (calcular_potencia_ativa_potencia_aparente_potencia_reativa(potencia_aparente, potencia_reativa))
                     print(mostrar_resultado(grandeza, resultado, unidade))
                   
     
