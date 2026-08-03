@@ -12,7 +12,7 @@ from util.interface import (
                             )
 from util.validacoes import validar_opcao
 from interface.menu_potencia_ativa_tensao_corrente_fator_de_potencia import menu_potencia_ativa_tensao_corrente_fator_de_potencia
-
+from interface.menu_potencia_ativa_potencia_aparente_fator_de_potencia import menu_potencia_ativa_potencia_aparente_fator_de_potencia
 def menu_potencia_ativa():
     
     while True:
@@ -36,7 +36,7 @@ def menu_potencia_ativa():
                         case "1":
                              menu_potencia_ativa_tensao_corrente_fator_de_potencia()
                         case "2":
-                             mostrar_aviso(MSG_EM_DESENVOLVIMENTO)
+                             menu_potencia_ativa_potencia_aparente_fator_de_potencia()
                              continue
                         case "3":
                              mostrar_aviso(MSG_EM_DESENVOLVIMENTO)
