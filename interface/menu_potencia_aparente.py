@@ -17,7 +17,7 @@ from util.interface import (
                             formatar_texto,
                             )
 from interface.menu_potencia_aparente_tensao_corrente import menu_potencia_aparente_tensao_corrente
-from interface.menu_potencia_aparente_Potencia_ativa_fator_de_potencia import menu_potencia_aparente_potencia_ativa_fator_de_potencia
+from interface.menu_potencia_aparente_potencia_ativa_fator_de_potencia import menu_potencia_aparente_potencia_ativa_fator_de_potencia
 from interface.menu_potencia_aparente_potencia_ativa_potencia_reativa import menu_potencia_aparente_potencia_ativa_potencia_reativa
 
 
