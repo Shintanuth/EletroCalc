@@ -8,7 +8,6 @@ from util.interface import (
                             mostrar_cabecalho, 
                             mostrar_opcoes,
                             mostrar_erro,
-                            mostrar_aviso
                             )
 from util.validacoes import validar_opcao
 from interface.menu_potencia_ativa_tensao_corrente_fator_de_potencia import menu_potencia_ativa_tensao_corrente_fator_de_potencia

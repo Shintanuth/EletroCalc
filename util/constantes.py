@@ -11,6 +11,7 @@ TITULO_MENU_REAT_IND = "REATÂNCIA INDUTIVA"
 TITULO_MENU_POTENCIAS = "POTÊNCIA ELÉTRICA"
 TITULO_MENU_POTENCIA_APARENTE = "POTÊNCIA APARENTE"
 TITULO_MENU_POTENCIA_ATIVA = "POTÊNCIA ATIVA"
+TITULO_MENU_POTENCIA_REATIVA = "POTÊNCIA REATIVA"
 FORMULA_POTENCIA_ATIVA_TENSAO_CORRENTE_FATOR_DE_POTENCIA = "𝑃=𝑉×𝐼×cos(𝜙)"
 FORMULA_POTENCIA_ATIVA_POTENCIA_APARENTE_FATOR_DE_POTENCIA = "𝑃=𝑆×cos(𝜙)"
 FORMULA_POTENCIA_ATIVA_POTENCIA_APARENTE_POTENCIA_REATIVA = "P = √(S² - Q²)"
@@ -39,14 +40,20 @@ OPCOES_MENU_POTENCIA_APARENTE = [
                                  "Potência Ativa (W) + Potência Reativa (Var)"
                                 ]
 OPCOES_MENU_POTENCIA_ATIVA = [
-                                       "Tensão (v) + Corrente (A) + Fator de Potência",
-                                       "Potência Aparente (VA) + Fator de Potência",
-                                       "Potência Aparente (VA) + Potência Reativa (Var) "
-                                      ]
+                              "Tensão (v) + Corrente (A) + Fator de Potência",
+                              "Potência Aparente (VA) + Fator de Potência",
+                              "Potência Aparente (VA) + Potência Reativa (Var) "
+                             ]
+OPCOES_MENU_POTENCIA_REATIVA = [
+                                "Tensão (v) + Corrente (A) + Ângulo",
+                                "Potência Aparente (VA) + Potência Ativa (W)",
+                                "Potência Ativa (W) +  Ângulo (°) "
+                                ]
 SELETOR_MENU_POTENCIA_ATIVA = ["s", "v", "c", "1", "2", "3"]
 SELETOR_MENU_PRINCIPAL = ["s", "1", "2", "3", "4"]
 SELETOR_MENU_POTENCIAS = ["s", "v", "c", "1", "2", "3", "4"]
 SELETOR_MENU_POTENCIA_APARENTE = ["s", "v", "c", "1", "2", "3"]
+SELETOR_MENU_POTENCIA_REATIVA = ["s", "v", "c", "1", "2", "3"]
 PI = pi
 FREQUENCIA_PADRAO = 60
 OHM = "Ω"
