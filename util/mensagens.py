@@ -52,6 +52,10 @@ ERRO_POTENCIA_APARENTE_OBRIGATORIA = "A potência aparente deve ser informada."
 
 ERRO_POTENCIA_REATIVA_OBRIGATORIA = "A potência reativa deve ser informada."
 
+ERRO_ANGULO_OBRIGATORIO = "O ângulo 𝜙 deve ser informado."
+
+ERRO_ANGULO_POSITIVO = "O ângulo 𝜙 deve maior que zero."
+
 ERRO_POTENCIA_ATIVA_POSITIVA = (
     "A potência ativa deve ser maior que zero."
 )
@@ -94,6 +98,10 @@ ERRO_INDUTANCIA_POSITIVA = (
 
 ERRO_CAPACITANCIA_POSITIVA = (
     "A capacitância deve ser maior que zero."
+)
+
+ERRO_POTENCIA_ATIVA_MAIOR_QUE_APARENTE = (
+    "A potência aparente deve ser maior que a potência ativa."
 )
 
 # ===========================

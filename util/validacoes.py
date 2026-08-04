@@ -24,6 +24,11 @@ def validar_intervalo(valor, minimo, maximo, nome):
             f"{nome} deve estar entre {minimo} e {maximo}"
         )
 
+def validar_maior(valor, limite, mensagem):
+
+    if valor > limite:
+        raise ValueError(mensagem)
+
 # ===========================
 # Validações de Menu
 # ===========================

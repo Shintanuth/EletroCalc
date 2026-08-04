@@ -1,3 +1,4 @@
+from math import sin, cos, tan, radians 
 from util.mensagens import ERRO_ENTRADA_NUMERICA
 
 # ===========================
@@ -24,3 +25,12 @@ def mh_para_h(valor):
 
 def uf_para_f(valor):
     return valor / 1_000_000
+
+def seno_graus(angulo):
+    return sin(radians(angulo))
+
+def cosseno_graus(angulo):
+    return cos(radians(angulo))
+
+def tangente_graus(angulo):
+    return tan(radians(angulo))
