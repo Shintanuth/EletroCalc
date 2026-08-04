@@ -10,7 +10,7 @@ from util.interface import (
                             mostrar_erro,
                             sair_do_menu
                             )
-from calculos.potencia_ativa import calcular_potencia_ativa_potencia_aparente_fator_de_potencia
+from calculos.potencia_ativa import calcular_potencia_ativa_por_potencia_aparente_fator_de_potencia
 
 def menu_potencia_ativa_potencia_aparente_fator_de_potencia():
 
@@ -30,7 +30,7 @@ def menu_potencia_ativa_potencia_aparente_fator_de_potencia():
     
                     print(SEPARADOR)
     
-                    grandeza, resultado, unidade = (calcular_potencia_ativa_potencia_aparente_fator_de_potencia(potencia_aparente, fator_de_potencia))
+                    grandeza, resultado, unidade = (calcular_potencia_ativa_por_potencia_aparente_fator_de_potencia(potencia_aparente, fator_de_potencia))
                     print(mostrar_resultado(grandeza, resultado, unidade))
                   
     

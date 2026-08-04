@@ -11,7 +11,7 @@ from util.interface import (
                             mostrar_erro,
                             sair_do_menu
                             )
-from calculos.potencia_ativa import calcular_potencia_ativa_potencia_aparente_potencia_reativa
+from calculos.potencia_ativa import calcular_potencia_ativa_por_potencia_aparente_potencia_reativa
 
 def menu_potencia_ativa_potencia_aparente_potencia_reativa():
 
@@ -31,7 +31,7 @@ def menu_potencia_ativa_potencia_aparente_potencia_reativa():
     
                     print(SEPARADOR)
     
-                    grandeza, resultado, unidade = (calcular_potencia_ativa_potencia_aparente_potencia_reativa(potencia_aparente, potencia_reativa))
+                    grandeza, resultado, unidade = (calcular_potencia_ativa_por_potencia_aparente_potencia_reativa(potencia_aparente, potencia_reativa))
                     print(mostrar_resultado(grandeza, resultado, unidade))
                   
     

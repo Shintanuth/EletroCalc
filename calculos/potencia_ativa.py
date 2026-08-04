@@ -14,7 +14,7 @@ from util.mensagens import (
                             )
 from math import sqrt
 
-def calcular_potencia_ativa_tensao_corrente_fator_de_potencia(tensao, corrente, fator_de_potencia):
+def calcular_potencia_ativa_por_tensao_corrente_fator_de_potencia(tensao, corrente, fator_de_potencia):
 
     validar_obrigatorio(tensao, ERRO_TENSAO_OBRIGATORIA)
     validar_obrigatorio(corrente, ERRO_CORRENTE_OBRIGATORIA)
@@ -30,7 +30,7 @@ def calcular_potencia_ativa_tensao_corrente_fator_de_potencia(tensao, corrente, 
 
     return "Potência Ativa", tensao * corrente * fator_de_potencia, WATT
 
-def calcular_potencia_ativa_potencia_aparente_fator_de_potencia(potencia_aparente, fator_de_potencia):
+def calcular_potencia_ativa_por_potencia_aparente_fator_de_potencia(potencia_aparente, fator_de_potencia):
 
     validar_obrigatorio(potencia_aparente, ERRO_POTENCIA_APARENTE_OBRIGATORIA)
     validar_obrigatorio(fator_de_potencia, ERRO_FATOR_DE_POTENCIA_OBRIGATORIO)
@@ -44,7 +44,7 @@ def calcular_potencia_ativa_potencia_aparente_fator_de_potencia(potencia_aparent
 
     return "Potência Ativa", potencia_aparente * fator_de_potencia, WATT
 
-def calcular_potencia_ativa_potencia_aparente_potencia_reativa(potencia_aparente, potencia_reativa):
+def calcular_potencia_ativa_por_potencia_aparente_potencia_reativa(potencia_aparente, potencia_reativa):
 
     validar_obrigatorio(potencia_aparente, ERRO_POTENCIA_APARENTE_OBRIGATORIA)
     validar_obrigatorio(potencia_reativa, ERRO_POTENCIA_REATIVA_OBRIGATORIA)

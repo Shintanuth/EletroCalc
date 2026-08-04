@@ -24,7 +24,7 @@ from util.mensagens import (
                             ERRO_POTENCIA_ATIVA_MAIOR_QUE_APARENTE
                             )
 
-def calcular_potencia_reativa_tensao_corrente_angulo(tensao, corrente, angulo):
+def calcular_potencia_reativa_por_tensao_corrente_angulo(tensao, corrente, angulo):
 
     validar_obrigatorio(tensao, ERRO_TENSAO_OBRIGATORIA)
     validar_obrigatorio(corrente, ERRO_CORRENTE_OBRIGATORIA)
@@ -40,7 +40,7 @@ def calcular_potencia_reativa_tensao_corrente_angulo(tensao, corrente, angulo):
 
     return "Potência Reativa", tensao * corrente * (seno_graus(angulo)), VOLT_AMPERE_REATIVO
 
-def calcular_potencia_reativa_potencia_aparente_potencia_ativa(potencia_aparente, potencia_ativa):
+def calcular_potencia_reativa_por_potencia_aparente_potencia_ativa(potencia_aparente, potencia_ativa):
 
     validar_obrigatorio(potencia_aparente, ERRO_POTENCIA_APARENTE_OBRIGATORIA)
     validar_obrigatorio(potencia_ativa, ERRO_POTENCIA_ATIVA_OBRIGATORIA)
@@ -54,7 +54,7 @@ def calcular_potencia_reativa_potencia_aparente_potencia_ativa(potencia_aparente
 
     return "Potência Reativa",  sqrt((potencia_aparente**2) - (potencia_ativa**2)) , VOLT_AMPERE_REATIVO
 
-def calcular_potencia_reativa_potencia_ativa_angulo(potencia_ativa, angulo):
+def calcular_potencia_reativa_por_potencia_ativa_angulo(potencia_ativa, angulo):
 
     validar_obrigatorio(potencia_ativa, ERRO_POTENCIA_ATIVA_OBRIGATORIA)
     validar_obrigatorio(angulo, ERRO_ANGULO_OBRIGATORIO)
