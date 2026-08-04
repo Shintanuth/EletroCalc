@@ -1,18 +1,20 @@
-from util.validacoes_eletricas import validar_valores_positivos
-from util.validacoes import validar_obrigatorio, validar_intervalo
+from math import sqrt
+
 from util.constantes import WATT
 from util.mensagens import (
-                            ERRO_TENSAO_POSITIVA, 
-                            ERRO_CORRENTE_POSITIVA, 
-                            ERRO_TENSAO_OBRIGATORIA, 
-                            ERRO_CORRENTE_OBRIGATORIA,
-                            ERRO_POTENCIA_APARENTE_POSITIVA,
-                            ERRO_POTENCIA_APARENTE_OBRIGATORIA,
-                            ERRO_POTENCIA_REATIVA_OBRIGATORIA,
-                            ERRO_FATOR_DE_POTENCIA_OBRIGATORIO,
-                            ERRO_FATOR_DE_POTENCIA_POSITIVO
-                            )
-from math import sqrt
+    ERRO_CORRENTE_OBRIGATORIA,
+    ERRO_CORRENTE_POSITIVA,
+    ERRO_FATOR_DE_POTENCIA_OBRIGATORIO,
+    ERRO_FATOR_DE_POTENCIA_POSITIVO,
+    ERRO_POTENCIA_APARENTE_OBRIGATORIA,
+    ERRO_POTENCIA_APARENTE_POSITIVA,
+    ERRO_POTENCIA_REATIVA_OBRIGATORIA,
+    ERRO_TENSAO_OBRIGATORIA,
+    ERRO_TENSAO_POSITIVA,
+)
+from util.validacoes import validar_intervalo, validar_obrigatorio
+from util.validacoes_eletricas import validar_valores_positivos
+
 
 def calcular_potencia_ativa_por_tensao_corrente_fator_de_potencia(tensao, corrente, fator_de_potencia):
 

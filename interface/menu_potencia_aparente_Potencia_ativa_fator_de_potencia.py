@@ -1,50 +1,54 @@
-from calculos.potencia_aparente import calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia
+from calculos.potencia_aparente import (
+    calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia,
+)
 from util.constantes import (
-                             SEPARADOR, 
-                             TITULO_MENU_POTENCIA_APARENTE, 
-                             FORMULA_POTENCIA_APARENTE_POTENCIA_ATIVA_FATOR_DE_POTENCIA, 
-                             WATT, 
-                            )
+    FORMULA_POTENCIA_APARENTE_POTENCIA_ATIVA_FATOR_DE_POTENCIA,
+    SEPARADOR,
+    TITULO_MENU_POTENCIA_APARENTE,
+    WATT,
+)
 from util.interface import (
-                            mostrar_cabecalho, 
-                            mostrar_resultado, 
-                            mostrar_erro, 
-                            ler_grandeza, 
-                            sair_do_menu
-                            )
+    ler_grandeza,
+    mostrar_cabecalho,
+    mostrar_erro,
+    mostrar_resultado,
+    sair_do_menu,
+)
+
 
 def menu_potencia_aparente_potencia_ativa_fator_de_potencia():
 
     while True:
+        mostrar_cabecalho(
+            TITULO_MENU_POTENCIA_APARENTE,
+            FORMULA_POTENCIA_APARENTE_POTENCIA_ATIVA_FATOR_DE_POTENCIA,
+        )
 
-            mostrar_cabecalho(
-                TITULO_MENU_POTENCIA_APARENTE,
-                FORMULA_POTENCIA_APARENTE_POTENCIA_ATIVA_FATOR_DE_POTENCIA,
-            )
+        print(SEPARADOR)
+
+        try:
+            potencia_ativa = ler_grandeza("Potência Ativa", WATT)
+            fator_de_potencia = ler_grandeza("Fator de Potências")
 
             print(SEPARADOR)
-            
 
-            try:
-                potencia_ativa = ler_grandeza("Potência Ativa", WATT)
-                fator_de_potencia = ler_grandeza("Fator de Potências")
+            grandeza, resultado, unidade = (
+                calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(
+                    potencia_ativa, fator_de_potencia
+                )
+            )
+            print(mostrar_resultado(grandeza, resultado, unidade))
 
-                print(SEPARADOR)
+        except ValueError as erro:
+            mostrar_erro(erro)
+            continue
 
-                grandeza, resultado, unidade = (calcular_potencia_aparente_por_potencia_ativa_e_fator_de_potencia(potencia_ativa, fator_de_potencia))
-                print(mostrar_resultado(grandeza, resultado, unidade))
-              
+        opcao = sair_do_menu()
 
-            except ValueError as erro:
-                mostrar_erro(erro)
+        match opcao:
+            case "c":
                 continue
-
-            opcao = sair_do_menu()
-
-            match opcao:
-                case "c":
-                    continue
-                case "v":
-                    return
-                case "s":
-                    return "sair"
+            case "v":
+                return
+            case "s":
+                return "sair"

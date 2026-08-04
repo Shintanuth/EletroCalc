@@ -23,32 +23,32 @@ FORMULA_LEI_DE_OHM = "I = E / R"
 FORMULA_REATANCIA_INDUTIVA = "XL = 2 x π x ƒ x L"
 FORMULA_POTENCIA_ATIVA = "P = E x I"
 OPCOES_MENU_PRINCIPAL = [
-                        "Lei de Ohm",
-                        "Potência Elétrica", 
-                        "Reatância Indutiva", 
-                        "Reatância Capacitiva"
-                        ]
+    "Lei de Ohm",
+    "Potência Elétrica",
+    "Reatância Indutiva",
+    "Reatância Capacitiva",
+]
 OPCOES_MENU_POTENCIAS = [
-                        "Potência Ativa",
-                        "Potência Reativa", 
-                        "Potência Aparente", 
-                        "Fator de Potência"
-                        ]
+    "Potência Ativa",
+    "Potência Reativa",
+    "Potência Aparente",
+    "Fator de Potência",
+]
 OPCOES_MENU_POTENCIA_APARENTE = [
-                                 "Tensão (V) + Corrente (A)",
-                                 "Potência Ativa (W) + Fator de Potência",
-                                 "Potência Ativa (W) + Potência Reativa (Var)"
-                                ]
+    "Tensão (V) + Corrente (A)",
+    "Potência Ativa (W) + Fator de Potência",
+    "Potência Ativa (W) + Potência Reativa (Var)",
+]
 OPCOES_MENU_POTENCIA_ATIVA = [
-                              "Tensão (v) + Corrente (A) + Fator de Potência",
-                              "Potência Aparente (VA) + Fator de Potência",
-                              "Potência Aparente (VA) + Potência Reativa (Var) "
-                             ]
+    "Tensão (v) + Corrente (A) + Fator de Potência",
+    "Potência Aparente (VA) + Fator de Potência",
+    "Potência Aparente (VA) + Potência Reativa (Var) ",
+]
 OPCOES_MENU_POTENCIA_REATIVA = [
-                                "Tensão (v) + Corrente (A) + Ângulo",
-                                "Potência Aparente (VA) + Potência Ativa (W)",
-                                "Potência Ativa (W) +  Ângulo (°) "
-                                ]
+    "Tensão (v) + Corrente (A) + Ângulo",
+    "Potência Aparente (VA) + Potência Ativa (W)",
+    "Potência Ativa (W) +  Ângulo (°) ",
+]
 SELETOR_MENU_POTENCIA_ATIVA = ["s", "v", "c", "1", "2", "3"]
 SELETOR_MENU_PRINCIPAL = ["s", "1", "2", "3", "4"]
 SELETOR_MENU_POTENCIAS = ["s", "v", "c", "1", "2", "3", "4"]

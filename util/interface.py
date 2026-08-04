@@ -1,13 +1,15 @@
-from textwrap import fill 
+from textwrap import fill
+
+from util.constantes import LARGURA, SEPARADOR
 from util.conversores import converte_entrada
-from util.constantes import SEPARADOR, LARGURA
 from util.mensagens import (
-                            TITULO_ERRO, 
-                            TITULO_AVISO, 
-                            TITULO_ATENCAO, 
-                            TITULO_SUCESSO, 
-                            MSG_OPCAO_INVALIDA
-                            )
+    MSG_OPCAO_INVALIDA,
+    TITULO_ATENCAO,
+    TITULO_AVISO,
+    TITULO_ERRO,
+    TITULO_SUCESSO,
+)
+
 
 def sair_do_menu():
     while True:
@@ -17,11 +19,12 @@ def sair_do_menu():
         print("[s] sair")
         print(SEPARADOR)
         opcao = input("Digite sua opção: ").strip().lower()
-        
-        if opcao in ("c","v","s"):
+
+        if opcao in ("c", "v", "s"):
             return opcao
 
         print(MSG_OPCAO_INVALIDA)
+
 
 def mostrar_cabecalho(titulo, versao=None, subtitulo=None):
 
@@ -39,6 +42,7 @@ def mostrar_cabecalho(titulo, versao=None, subtitulo=None):
     print()
     print(SEPARADOR)
 
+
 def mostrar_opcoes(opcoes, voltar=True):
     for indice, opcao in enumerate(opcoes, start=1):
         print(f"{indice} - {opcao}")
@@ -51,12 +55,10 @@ def mostrar_opcoes(opcoes, voltar=True):
     print("[s] - Sair")
     print(SEPARADOR)
 
+
 def mostrar_resultado(grandeza, resultado, unidade):
-    return (
-    f"{SEPARADOR}\n\n"
-    f"{'RESULTADO':^40}\n\n"
-    f"{grandeza} = {resultado:.2f} {unidade}"
-)
+    return f"{SEPARADOR}\n\n{'RESULTADO':^40}\n\n{grandeza} = {resultado:.2f} {unidade}"
+
 
 def mostrar_caixa(titulo, mensagem):
 
@@ -70,9 +72,9 @@ def mostrar_caixa(titulo, mensagem):
     print()
     print(SEPARADOR)
 
+
 def ler_grandeza(nome_grandeza, unidade=None):
 
-    
     mensagem = f"{nome_grandeza}"
 
     if unidade is not None:
@@ -80,18 +82,23 @@ def ler_grandeza(nome_grandeza, unidade=None):
 
     return converte_entrada(input(f"{mensagem}: "))
 
+
 def formatar_texto(texto):
 
     return fill(str(texto), width=LARGURA)
 
+
 def mostrar_erro(mensagem):
     mostrar_caixa(TITULO_ERRO, mensagem)
+
 
 def mostrar_aviso(mensagem):
     mostrar_caixa(TITULO_AVISO, mensagem)
 
+
 def mostrar_sucesso(mensagem):
     mostrar_caixa(TITULO_SUCESSO, mensagem)
+
 
 def mostrar_atencao(mensagem):
     mostrar_caixa(TITULO_ATENCAO, mensagem)
