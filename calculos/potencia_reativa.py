@@ -19,8 +19,8 @@ from util.validacoes import (
     validar_intervalo,
     validar_maior,
     validar_obrigatorio,
-    validar_obrigatorio_positivo,
 )
+from util.validacoes_eletricas import validar_valores_positivos
 
 
 def calcular_potencia_reativa_por_tensao_corrente_angulo(tensao, corrente, angulo):
@@ -29,7 +29,7 @@ def calcular_potencia_reativa_por_tensao_corrente_angulo(tensao, corrente, angul
     validar_obrigatorio(corrente, ERRO_CORRENTE_OBRIGATORIA)
     validar_obrigatorio(angulo, ERRO_ANGULO_OBRIGATORIO)
 
-    validar_obrigatorio_positivo(
+    validar_valores_positivos(
         [
             (tensao, ERRO_TENSAO_POSITIVA),
             (corrente, ERRO_CORRENTE_POSITIVA),
@@ -53,7 +53,7 @@ def calcular_potencia_reativa_por_potencia_aparente_potencia_ativa(
     validar_obrigatorio(potencia_aparente, ERRO_POTENCIA_APARENTE_OBRIGATORIA)
     validar_obrigatorio(potencia_ativa, ERRO_POTENCIA_ATIVA_OBRIGATORIA)
 
-    validar_obrigatorio_positivo(
+    validar_valores_positivos(
         [
             (potencia_aparente, ERRO_POTENCIA_APARENTE_POSITIVA),
             (potencia_ativa, ERRO_POTENCIA_ATIVA_POSITIVA),
@@ -76,7 +76,7 @@ def calcular_potencia_reativa_por_potencia_ativa_angulo(potencia_ativa, angulo):
     validar_obrigatorio(potencia_ativa, ERRO_POTENCIA_ATIVA_OBRIGATORIA)
     validar_obrigatorio(angulo, ERRO_ANGULO_OBRIGATORIO)
 
-    validar_obrigatorio_positivo(
+    validar_valores_positivos(
         [(potencia_ativa, ERRO_POTENCIA_ATIVA_POSITIVA), (angulo, ERRO_ANGULO_POSITIVO)]
     )
 

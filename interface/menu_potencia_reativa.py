@@ -1,3 +1,6 @@
+from interface.menu_potencia_reativa_tensao_corrente_angulo import (
+    menu_potencia_reativa_tensao_corrente_angulo,
+)
 from util.constantes import (
     OPCOES_MENU_POTENCIA_REATIVA,
     SELETOR_MENU_POTENCIA_REATIVA,
@@ -30,7 +33,7 @@ def menu_potencia_reativa():
 
         match opcao:
             case "1":
-                continue
+                menu_potencia_reativa_tensao_corrente_angulo()
             case "2":
                 continue
             case "3":
