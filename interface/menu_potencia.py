@@ -1,5 +1,6 @@
 from interface.menu_potencia_aparente import menu_potencia_aparente
 from interface.menu_potencia_ativa import menu_potencia_ativa
+from interface.menu_potencia_reativa import menu_potencia_reativa
 from util.constantes import (
     OPCOES_MENU_POTENCIAS,
     SELETOR_MENU_POTENCIAS,
@@ -39,8 +40,7 @@ def menu_potencias():
             case "1":
                 menu_potencia_ativa()
             case "2":
-                print(mostrar_aviso(formatar_texto(MSG_EM_DESENVOLVIMENTO)))
-                continue
+                menu_potencia_reativa()
             case "3":
                 menu_potencia_aparente()
             case "4":

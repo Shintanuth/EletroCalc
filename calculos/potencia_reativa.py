@@ -80,7 +80,7 @@ def calcular_potencia_reativa_por_potencia_ativa_angulo(potencia_ativa, angulo):
         [(potencia_ativa, ERRO_POTENCIA_ATIVA_POSITIVA), (angulo, ERRO_ANGULO_POSITIVO)]
     )
 
-    validar_intervalo(angulo, 0, 90, "O ângulo de defasagem")
+    validar_intervalo(angulo, 0, 89.999, "O ângulo de defasagem")
 
     return (
         "Potência Reativa",
