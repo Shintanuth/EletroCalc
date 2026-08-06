@@ -1,3 +1,6 @@
+from interface.menu_potencia_reativa_potencia_aparente_potencia_ativa import (
+    menu_potencia_reativa_potencia_aparente_potencia_ativa,
+)
 from interface.menu_potencia_reativa_tensao_corrente_angulo import (
     menu_potencia_reativa_tensao_corrente_angulo,
 )
@@ -35,7 +38,7 @@ def menu_potencia_reativa():
             case "1":
                 menu_potencia_reativa_tensao_corrente_angulo()
             case "2":
-                continue
+                menu_potencia_reativa_potencia_aparente_potencia_ativa()
             case "3":
                 continue
             case "c":
